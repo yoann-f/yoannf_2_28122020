@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/style_reservia.css" />
+        <link href="fontawesome-5.15.1/css/all.css" rel="stylesheet">
+        <title>Réservia</title>
+    </head>
+
+    <body>
+        <header>
+
+            <div class="site-header">
+
+                <!--Logo en bannière + lien vers la page d'accueil-->
+                <div class="site-header-logo">
+                    <a class="site-logo-link" href="#" title="Réservia.fr">
+                        <img class="responsive-logo" src="images/logo/Reservia.svg" alt="Logo Réservia" />
+                    </a>
+                </div>
+
+                <!--Menu de navigation + lien /ancres vers les sections concernées du site-->
+                <div role="navigation" class="site-header-nav">
+
+                    <!--Bouton-lien-ancre vers la section hebergement-->
+                    <a id="header-nav-button" href="#">Hébergement</a>
+
+                    <!--Bouton-lien-ancre vers la section activités-->
+                    <a id="header-nav-button" href="#">Activités</a>
+
+                    <!--Bouton-lien-ancre vers la page d'inscription-->
+                    <a id="header-nav-button" href="#">S'inscrire</a>
+                </div>
+            </div>
+            
+            <!--Menu de recherche-->
+            <div class="search-header">
+
+                <!--Titre et sous-titre du menu de recherche-->
+                <div class="search-header-content">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+
+                <!--Formulaire de recherche-->
+                <div class="search-field-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <form method="POST" action="#" class="search-field-button">
+                        <input type="search" name="search-field" id="search-field" value="Marseille, France"/>
+                        <label for="search-field" class="search-button">Rechercher</label>
+                    </form>
+                </div>
+
+                <!--Filtres de recherche-->
+                <div class="filter">
+                    <div class="filter-text">Filtres
+                    <a id="filter-button" href="#">
+                        <span class="fas fa-money-bill-wave"></span>
+                        <span class="filter-economic">Économique</span>
+                    </a>
+                    <a id="filter-button" href="#">
+                        <span class="fas fa-child"></span>
+                        <span class="filter-family">Familial</span>
+                    </a>
+                    <a id="filter-button" href="#">
+                        <span class="fas fa-heart"></span>
+                        <span class="filter-romantic">Romantique</span>
+                    </a>
+                    <a id="filter-button" href="#">
+                        <span class="fas fa-dog"></span>
+                        <span class="filter-animals">Animaux autorisés</span>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="search-result">
+                    <span class="fas fa-info"></span><p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </div>
+        </header>
+
+
+        <!--Contenu principal de la page-->
+        <main role="main">
+            <article>
+                
+                <!--Affichage des hébergements selon la recherche effectuée-->
+                <div class="hebergement-article-title">
+                    <h1>Hébergements à Marseille</h1>
+
+                    <div class="hebergement-article">
+                        <div id="hebergement-article-content">
+                            <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/>
+                            <div id="article-content">
+                                <h3>Auberge La Cannebière</h3>
+                                <span>Nuit à partir de 25€</span>
+                                <span class="fas fa-star"></span>
+                            </div>                        
+                        </div>
+                        <div id="hebergement-article-content">
+                            <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" />
+                            <div id="article-content">
+                                <h3>Hôtel du port</h3>
+                                <span>Nuit à partir de 52€</span>
+                                <span class="fas fa-star"></span>
+                            </div>
+                        </div>
+                        <div id="hebergement-article-content">
+                            <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" />
+                            <div id="article-content">
+                                <h3>Hôtel les mouettes</h3>
+                                <span>Nuit à partir de 76€</span>
+                                <span class="fas fa-star"></span>
+                            </div>
+                        </div>
+                        <div id="hebergement-article-content">
+                            <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" />
+                            <div id="article-content">
+                                <h3>Hôtel de la mer</h3>
+                                <span>Nuit à partir de 46€</span>
+                                <span class="fas fa-star"></span>
+                            </div>
+                        </div>
+                        <div id="hebergement-article-content">
+                            <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" />
+                            <div id="article-content">
+                                <h3>Auberge Le Panier</h3>
+                                <span>Nuit à partir de 23€</span>
+                                <span class="fas fa-star"></span>
+                            </div>
+                        </div>
+                        <div id="hebergement-article-content">
+                            <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" />
+                            <div id="article-content">
+                                <h3>Hôtel chez Amina</h3>
+                                <span>Nuit à partir de 96€</span>
+                                <span class="fas fa-star"></span>
+                            </div>
+                        </div>
+
+                        <div class="hebergement-article-content-more">
+                            Afficher plus
+                        </div>
+                    </div>
+                </div>    
+
+                <!--Affichage des hébergement les plus populaires selon la recherche effectuée-->
+                <div class="most-popular-article-title">
+                    <h1>Les plus populaires</h1>
+
+                    <div class="most-popular-article"></div>
+                </div>
+            </article>
+
+            <section>
+                <!--Affichage des activités proches selon la recherche effectuée-->
+                <div class="activity-article">
+                    <h1>Activités à Marseille</h1>
+                </div>
+            </section>
+        </main>
+        
+        
+        <footer>
+            <nav class="footer">
+                <ul class="a-propos-footer">
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+                <ul class="hebergements-footer">
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+                <ul class="assistance-footer">
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

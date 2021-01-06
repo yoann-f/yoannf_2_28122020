@@ -1,0 +1,346 @@
+* {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #181818;
+}
+
+body {
+    margin: 0 60px 0 60px;
+    background-color: #fff;
+}
+
+
+/* HEADER */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+/*    border: 3px solid rgb(255, 0, 0); /*cadre de visualisation du header*/
+}
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+    position:fixed;
+    background-color: #fff;
+    z-index: 999;
+
+/*    border: 3px solid rgb(255, 208, 0); /*cadre de visualisation du menu de navigation*/
+}
+
+.site-header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 2% 0 2%;
+    
+/*    border: 3px solid darkgreen; /*Cadre de visualisation du menu latéral droit*/
+}
+
+#header-nav-button {
+    width: 156px;
+    text-align: center;
+    padding: 36px 22px 0 22px;
+    text-decoration: none;
+    border-top: 4px solid #fff;    
+    
+    /*background-color: darkorchid; /*Couleur de fond pour visualisation des bouton du menu*/
+}
+
+#header-nav-button:hover {
+    border-top: 4px solid #0065FC;
+    font-weight: bold;    
+    color: #0065FC;
+    
+    /*background-color: rgb(50, 104, 204); /*Couleur de fond pour visualisation des bouton du menu*/
+}
+
+#header-nav-button:last-child {
+    font-weight: bold;
+    color: #0065FC;
+}
+
+.site-header-logo {
+    padding-top: 35px;
+    transition: transform 500ms ease-out; 
+}
+
+.site-header-logo:hover {
+    padding-top: 35px;
+    transform: rotate(-5deg) scale(1.5);
+    transition: transform 500ms ease-in;    
+}
+
+.search-header {
+    width: 100%;
+    padding-top: 6%;
+    display: flex;
+    flex-direction: column;
+
+/*    flex-wrap: wrap;
+
+/*    border: 5px solid rgb(50, 204, 145); /*Couleur de fond pour visualisation des bouton du menu*/
+}
+
+.search-header-content {
+
+/*    border: orangered 3px solid;*/
+}
+
+.search-field-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 425px;
+
+/*    background-color: orchid;*/    
+}
+
+.search-field-content .fas {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    
+/*    color: palegreen;*/
+}
+
+.search-field-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+/*    border: peru solid 5px;*/
+}
+
+#search-field {    
+    width: 235px;    
+    height: 50px;
+    padding-left: 10px;
+    border: none; 
+}
+
+.search-button {
+    width: 135px;    
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 15px 15px 0;
+}
+
+.search-button:hover {
+    text-shadow: 1px 1px 2px #000000;    
+    cursor: pointer;
+}
+
+.filter {
+    margin: 35px 0 5px 0;
+    display: flex;
+    flex-direction: row;
+
+/*    border: 5px solid darkgreen;*/    
+}
+
+.filter-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    font-weight: bold;
+}
+
+#filter-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: max-content;
+    padding: 0 20px 0 0;
+    border: 1px solid #DEEBFF;
+    border-radius: 45px;
+    text-decoration: none;
+    transition: transform 300ms ease-out;
+}
+
+#filter-button .fas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;     
+    width: 50px;
+    height: 50px;
+    border-radius: 45px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    margin-right: 10px;  
+}
+
+#filter-button:hover {
+    background-color: #DEEBFF;
+    transform: scale(1.1);
+    transition: transform 300ms ease-in;
+    border: #0065FC solid 2px;
+}
+
+#filter-button:active {
+    background-color: #DEEBFF;
+}
+
+.search-result {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 55px;
+}
+
+.search-result .fas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 45px;
+    border: #DEEBFF solid 2px;
+    margin: 0 10px;
+    color: #0065FC;
+}
+
+
+
+
+
+
+
+
+h1 {
+    font-size: 125%;
+}
+
+
+
+
+
+/*THI IS MY OLD CODE FOR MEMORY AND BEFORE MODIFICATIONS*/
+
+
+li {
+    margin-right: 20px;;
+}
+
+main {
+    padding: 5px;
+
+    /*background-color: rgb(161, 70, 70);*/
+    border: 3px solid #25ac25;
+}
+
+article {
+    display: flex;
+    
+    /*flex-direction: row;*/    
+    /*! border: solid 3px #eee23f; */
+}
+
+.hebergement-article-title {
+    display: flex;
+    /*! flex-direction: column; */
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 0 20px 0 20px;
+    margin: 0 10px 0 0;
+    border-radius: 20px;
+    background-color: #DEEBFF;    
+
+/*! border: #3e25ac solid 3px; */
+}
+
+.hebergement-article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    
+    /*! border: #25ac25 solid 3px; */
+    align-items: baseline;
+}
+
+#hebergement-article-content {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 30%;
+    padding: 5px;
+    margin: 10px 10px -50px 10px;
+    background-color: #fff;
+    border-radius: 20px 20px 20px 20px;
+    flex-wrap: wrap;
+    transition: transform 250ms ease-out;
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.1);
+    border-bottom: #fff solid 2px; 
+}
+
+#hebergement-article-content:hover {
+    transform: rotate(5deg) scale(1.1);
+    transition: transform 150ms ease-in;
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.1);
+    border-bottom: #0065FC solid 3px;
+    
+    cursor:pointer; /*EFFET DE VISUALISATION DU CURSEUR LORS DU SURVOL DES ETIQUETES -JUSTE POUR LA DEMO-*/
+}
+
+#hebergement-article-content img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px 20px 0 0;
+}
+
+#article-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#article-content h3 {
+    margin: 5px 5px 5px 5px;
+}
+
+#article-content span {
+    margin: 0 5px 0 5px;
+}
+
+.most-popular-article-title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 0 10px 0 10px;
+
+/*    border: #1fddff solid 3px;*/
+}
+
+.most-popular-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    
+    /*! border: #25ac25 solid 3px; */
+    align-items: baseline;
+}
