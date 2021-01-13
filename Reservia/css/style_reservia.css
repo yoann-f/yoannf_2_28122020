@@ -4,7 +4,8 @@
 }
 
 body {
-    margin: 0 60px 0 60px;
+    display: block;
+    margin: 0;
     /*background-color: rgb(187, 74, 74);*/
 }
 
@@ -12,7 +13,7 @@ body {
 /* HEADER */
 header {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     width: 100%;
 
     /*border: 3px solid rgb(255, 0, 0); /*cadre de visualisation du header*/
@@ -20,17 +21,17 @@ header {
 
 .site-header {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     top: 0;
     left: 0;
+    background-color: #fff;    
     
     /*Fixation de la barre de navigation*/
-    position:fixed;
-    background-color: #fff;
-    z-index: 999;
+    /*position:fixed;
+    z-index: 999;*/
 
     /*border: 3px solid rgb(255, 208, 0); /*cadre de visualisation du menu de navigation*/
 }
@@ -39,51 +40,54 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 0 2% 0 2%;
+    padding: 0 3.2em 0 2em;
     
 /*    border: 3px solid darkgreen; /*Cadre de visualisation du menu latéral droit*/
 }
 
-#header-nav-button {
-    width: 156px;
+.site-header-nav a {
+    width: 10em;
     text-align: center;
-    padding: 36px 22px 0 22px;
+    padding: 2em 1em 0 1em;
     text-decoration: none;
-    border-top: 4px solid #fff;    
+    border-top: 0.3em solid #fff;    
     
     /*background-color: darkorchid; /*Couleur de fond pour visualisation des bouton du menu*/
 }
 
-#header-nav-button:hover {
-    border-top: 4px solid #0065FC;
+.site-header-nav a:hover {
+    border-top: 0.3em solid #0065FC;
     font-weight: bold;    
     color: #0065FC;
     
     /*background-color: rgb(50, 104, 204); /*Couleur de fond pour visualisation des bouton du menu*/
 }
 
-#header-nav-button:last-child {
+.header-nav-button-register {
     font-weight: bold;
     color: #0065FC;
 }
 
 .site-header-logo {
-    padding-top: 35px;
-    padding-left: 60px;
+    padding-top: 1.2em;
+    padding-left: 3.2em;
     transition: transform 500ms ease-out; 
 }
 
 .site-header-logo:hover {
-    padding-top: 35px;
     transform: rotate(-5deg) scale(1.5);
     transition: transform 500ms ease-in;    
 }
 
+img.responsive-logo {
+    width: 12em;
+}
+
 .search-header {
     width: 100%;
-    padding-top: 6%;
     display: flex;
     flex-direction: column;
+    padding-left: 3.2em;
 
 /*    flex-wrap: wrap;
 
@@ -97,10 +101,10 @@ header {
 
 .search-field-content {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
     justify-content: space-around;
-    align-items: center;
+    /*align-items: center;*/
     width: 425px;    
 }
 
@@ -150,7 +154,7 @@ header {
     margin: 35px 0 5px 0;
     display: flex;
     flex-direction: row;
-    height: 60px;
+    height: 4em
 
 /*    border: 5px solid darkgreen; /*Cadre de visualisation*/    
 }
@@ -159,9 +163,9 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    width: 60%;
+    width: 100%;
     font-weight: bold;
 }
 
@@ -172,6 +176,7 @@ header {
     align-items: center;
     width: max-content;
     padding: 0 20px 0 0;
+    margin-left: 2em;
     border: 1px solid #DEEBFF;
     border-radius: 45px;
     text-decoration: none;
@@ -192,7 +197,7 @@ header {
 
 .filter-button:hover {
     background-color: #DEEBFF;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 300ms ease-in;
     border: #0065FC solid 2px;
 }
@@ -228,7 +233,7 @@ header {
 
 
 h1 {
-    font-size: 125%;
+    font-size: 1.25em;
 }
 
 h3 {
@@ -269,15 +274,15 @@ main {
 
 
 /*SECTION HÉBERGEMENT*/
-.hebergement-article-title {
+.hebergement-article-title:nth-child(1) {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 1200px;
-    height: 800px;
-    padding: 15px;
-    margin: 0 0 0 10px;
-    border-radius: 20px;
+    flex: 3;
+    flex-flow: column nowrap;
+    /*width: 63.5%;
+    height: auto;*/
+    padding: 1.2em;
+    margin: 0 0 0 2em;
+    border-radius: 2em;
     background-color: #F2F2F2;    
 
     /*border: #3e25ac solid 3px; /*Cadre pour visualisation*/
@@ -285,24 +290,25 @@ main {
 
 .hebergement-article {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     flex-wrap: wrap;
+    justify-content: center;
     align-content: space-around;
 }
 
 .hebergement-article-content {
-    display: flex;
-    flex-direction: column;
-    width: 340px;
-    height: 270px;
-    padding: 5px;
-    margin: 35px 25px 0px 25px;
+    /*display: flex;
+    flex-direction: column;*/
+    width: 30%;
+    height: 25%;
+    padding: 0.2em;
+    margin: 0 1em 0 1em;
     background-color: #fff;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 2em;
     flex-wrap: nowrap;
     transition: transform 250ms ease-out;
-    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.1);
-    border-bottom: #fff solid 2px; 
+    box-shadow: 0.05em 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.1);
+    border-bottom: #fff solid 0.5em; 
 }
 
 .hebergement-article-content:hover {
@@ -317,7 +323,7 @@ main {
 .hebergement-article-content img {
     width: 100%;
     height: 70%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 2em 2em 0 0;
     object-fit: cover;
 }
 
@@ -345,6 +351,12 @@ main {
     color: #0065FC;
 }
 
+.hebergement-article-content-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .hebergement-article-content-more > a {
     font-weight: bold;
     text-decoration: none;
@@ -360,13 +372,15 @@ main {
 
 
 /*SECTION ARTICLES POPULAIRES*/
-.most-popular-article-title {
+.most-popular-article-title:nth-child(2) {
     display: flex;
+    flex: 1;
     flex-flow: column nowrap;
-    width: 465px;
-    padding: 15px;
-    margin: 0 10px 0 25px;
-    border-radius: 20px;
+    width: 27%;
+    height: auto;
+    padding: 1.2em;
+    margin: 0 2em 0 2em;
+    border-radius: 2em;
     background-color: #F2F2F2;  
     
     /*border: #3e25ac solid 3px; /*Cadre pour visualisation*/
@@ -446,7 +460,7 @@ main {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    width: 1740px;
+    width: 100%;
     margin: 10px 10px 0 10px;
     padding: 15px;
 
@@ -458,6 +472,16 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+}
+
+@media all and (max-width: 1100px) {
+    .activity-article {
+    flex-direction: column;
+    justify-content: center;
+    background-color: #aa2222;    
+
+    /*border: #3e25ac solid 3px; /*Cadre pour visualisation*/
+    }
 }
 
 .activity-article-content-1 {
