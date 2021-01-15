@@ -1,3 +1,7 @@
+/* ////////////////////////////////////// */
+/* DEFAULT CSS  Min:1752 --> Max:1920px   */
+/* ////////////////////////////////////// */
+
 * {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;    
 }
@@ -8,7 +12,7 @@ body {
 }
 
 /* ///////////////////////////////////////////////////////////////////////////// */
-/*MISE EN FORME DES ELEMENTS PAR DEFAUT*/
+/*MISE EN FORME DES BALISES*/
 a {
     color: inherit;
     text-decoration: none;
@@ -20,6 +24,7 @@ p {
 
 h2 {
     font-size: 1.25em;
+    margin-left: 1em;
 }
 
 ul {
@@ -113,7 +118,7 @@ ul {
     justify-content: center;
     align-items: center;
     background-color: #f2f2f2;
-    border-radius: 2em 0 0 2em;
+    border-radius: 1.2em 0 0 1.2em;
 }
 
 .search-field .fas:hover {
@@ -142,12 +147,12 @@ ul {
     width: 12em;
     height: 5em;
     background-color: #0065fc;
-    border-radius: 0 2em 2em 0 ;
+    border-radius: 0 1.2em 1.2em 0 ;
 }
 
 .search-button:hover {
-background: rgb(0,101,252);
-background: linear-gradient(180deg, rgba(0,101,252,1) 0%, rgba(0,101,252,1) 0%, rgba(0,91,228,1) 100%);
+    background: rgb(0,101,252);
+    background: linear-gradient(180deg, rgba(0,101,252,1) 0%, rgba(0,101,252,1) 0%, rgba(0,91,228,1) 100%);
     text-shadow: 0.05em 0.05em 0.1em #000;
     cursor: pointer;
 }
@@ -162,13 +167,13 @@ background: linear-gradient(180deg, rgba(0,101,252,1) 0%, rgba(0,101,252,1) 0%, 
 
 .filter-button {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
     width: max-content;
     padding: 0 1em 0 0;
-    margin-left: 2em;
-    border: 0.04em solid #deebff;
-    border-radius: 2em;
+    margin-left: 1em;
+    border: 0.2em solid #f2f2f2;
+    border-radius: 4em;
     transition: transform 300ms ease-out;
 }
 
@@ -186,7 +191,7 @@ background: linear-gradient(180deg, rgba(0,101,252,1) 0%, rgba(0,101,252,1) 0%, 
 
 .filter-button:hover {
     background-color: #DEEBFF;
-    border: #0065FC solid 0.04em;    
+    border: #0065Fc solid 0.2em;    
     transform: scale(1.05);
     transition: transform 300ms ease-in;
 }
@@ -206,7 +211,7 @@ background: linear-gradient(180deg, rgba(0,101,252,1) 0%, rgba(0,101,252,1) 0%, 
     align-items: center;
     width: 2em;
     height: 2em;
-    border-radius: 2em;
+    border-radius: 1.2em;
     border: #DEEBFF solid 0.04em;
     margin: 0 1em;
     color: #0065FC;
@@ -223,16 +228,16 @@ main {
 }
 
 /* ///////////////////////////////////////////////////////////////////////////// */
-/*SECTION HÉBERGEMENT*/
+/*SECTION HEBERGEMENT*/
 .hosting-container:nth-child(1) {
     flex: 3;    
     display: flex;
     flex-flow: column nowrap;
     padding: 1.2em;
     margin: 0 0 0 2em;
-    border-radius: 2em;
+    border-radius: 1.2em;
     background-color: #F2F2F2;
-    box-shadow: 0.05em 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.1);         
+    box-shadow: 0.05em 0.05em 0.25em 0.1em rgba(0, 0, 0, 0.1);         
 
     /*border: #3e25ac solid 3px; /*Cadre pour visualisation (A supprimer)*/
 }
@@ -253,7 +258,7 @@ main {
     padding: 0.2em;
     margin: 2em 2em 0 2em;
     background-color: #fff;
-    border-radius: 2em;
+    border-radius: 1.2em;
     box-shadow: 0.05em 0.05em 0.5em 0.1em rgba(0, 0, 0, 0.1);
     border-bottom: #fff solid 0.5em;
     transition: transform 250ms ease-out;    
@@ -267,11 +272,11 @@ main {
 }
 
 .hosting-selection-container .thumbnail img {
-    width: inherit;
+    width: 100%;
     height: 10em;
     display: flex;
     flex-flow: column wrap;
-    border-radius: 2em 2em 0 0;
+    border-radius: 1.2em 1.2em 0 0;
     object-fit: cover;
 }
 
@@ -279,13 +284,13 @@ main {
 .hosting-more {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .hosting-more > a {
     font-weight: bold;
     text-decoration: none;
-    margin: 35px;
+    margin: 2em;
     display: flex;
 }
 
@@ -304,10 +309,23 @@ main {
     flex-flow: column nowrap;
     padding: 1.2em;
     margin: 0 2em 0 2em;
-    border-radius: 2em;
-    background-color: #F2F2F2;  
+    border-radius: 1.2em;
+    background-color: #F2F2F2;
+    box-shadow: 0.05em 0.05em 0.25em 0.1em rgba(0, 0, 0, 0.1);       
     
     /*border: #3e25ac solid 3px; /*Cadre pour visualisation (A supprimer)*/
+}
+
+.most-popular-title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.most-popular-title .fas {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
 }
 
 .most-popular-selection-container {
@@ -327,11 +345,11 @@ main {
     display: flex;
     flex-flow: row nowrap;
     padding: 0.2em;
-    margin: 1em 1em 0 1em;
+    margin: 1em 1em 1em 1em;
     background-color: #fff;
-    border-radius: 2em;
+    border-radius: 1.2em;
     box-shadow: 0.05em 0.05em 0.5em 0.1em rgba(0, 0, 0, 0.1);
-    border-bottom: #fff solid 0.5em;
+    /*border-bottom: #fff solid 0.5em;*/
     transition: transform 250ms ease-out;    
 
     /*border: #ff8800 solid 3px; /*Cadre pour visualisation (A supprimer)*/     
@@ -348,33 +366,40 @@ main {
     display: flex;
     width: 10em;
     height: 12em;
-    border-radius: 2em 0 0 2em;
+    border-radius: 1.2em 0 0 1.2em;
     object-fit: cover;
 }
 
 .popular-thumbnail {
-    padding: 1em;
+    display: flex;
+    flex-direction: column;
 }
+
+/*.popular-thumbnail * {
+    padding-left: 1em;
+}*/
 
 
 /* ///////////////////////////////////////////////////////////////////////////// */
 /*SECTION ACTIVITES*/
 .activity-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /*    justify-content: center;*/
     width: 100%;
-    margin: 2em 2em 0 2em;
-    padding: 1.2em;
-    border-radius: 2em;
+    margin: 2em 1em 0 1em;
+    /*padding: 1.2em;
+    border-radius: 1.2em;
     background-color: #F2F2F2;
+    box-shadow: 0.05em 0.05em 0.25em 0.1em rgba(0, 0, 0, 0.1);*/     
 
     /*border: #3e25ac solid 3px; /*Cadre pour visualisation*/    
 }
 
-.activity-selection {
+.activity-selection-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -383,7 +408,7 @@ main {
     height: 90%;
     /* padding: 0.2em; *
     object-fit: cover;
-    border-radius: 2em 2em 0 0;
+    border-radius: 1.2em 1.2em 0 0;
 }*/
 
 .activity-article-content-1 a {
@@ -393,7 +418,7 @@ main {
     width: 24em;
     height: 90%;
     margin: 1.3em;
-    border-radius: 2em;
+    border-radius: 1.2em;
     background-color: #fff;    
     box-shadow: 0.05em 0.05em 0.5em 0.1em rgba(0, 0, 0, 0.1);
     border-bottom: #fff solid 0.5em;
@@ -405,14 +430,14 @@ main {
 .activity-article-content-1 a:hover {
     border-bottom: #0065FC solid 0.5em;
     transition: transform 250ms ease-in; 
-    transform: rotate(2.5deg) scale(1.05);       
+    transform: rotate(1deg) scale(1.05);       
 }
 
 .activity-article-content-1 img {
     width: 24em;
     height: 86%;
     object-fit: cover;
-    border-radius: 2em 2em 0 0;
+    border-radius: 1.2em 1.2em 0 0;
 }
 
 .activity-article-content-2 a {
@@ -428,7 +453,7 @@ main {
     width: 24em;
     height: 13em;
     /*margin: 0.6em;*/
-    border-radius: 2em;
+    border-radius: 1.2em;
     background-color: #fff;    
     box-shadow: 0.05em 0.05em 0.5em 0.1em rgba(0, 0, 0, 0.1);
     border-bottom: #fff solid 0.5em;    
@@ -447,7 +472,7 @@ main {
     width: 24em;
     height: 75%;
     object-fit: cover;
-    border-radius: 2em 2em 0 0;
+    border-radius: 1.2em 1.2em 0 0;
 }
 
 
@@ -471,6 +496,10 @@ nav {
     /*border: #3e25ac solid 3px; /*Cadre pour visualisation*/
 }
 
+nav a:hover {
+    color: #0065fc;
+}
+
 /*.site-footer {
     display: flex;
     flex-flow: row wrap;
@@ -478,7 +507,7 @@ nav {
     width: 300px;
 
     background-color: #25ac25;
-    border-radius: 20px;
+    border-radius: 1.2em;
 
 }*/
 
@@ -498,8 +527,13 @@ nav {
     margin: 0.5em 0.5em 0.5em 0.5em;
 }
 
-.thumbnail .star-result {
+.thumbnail-title:nth-child(1) {
+    flex: 5;
+}
+
+.thumbnail .star-result:nth-child(2) {
+    flex: 1;
     display: flex;
-    flex-flow: row wrap;
+/*    flex-flow: row nowrap;*/
     margin: 0.5em 0.5em 0.1em 0.8em;
 }

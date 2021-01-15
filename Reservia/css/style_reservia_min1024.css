@@ -1,0 +1,236 @@
+/* ////////////////////////////////////// */
+/* RESPONSIVE CSS Min:1024 --> Max:1209px */
+/* ////////////////////////////////////// */
+
+@media all and (min-width: 1024px) and (max-width: 1209px) {
+
+
+    /* ////////////////////////////////////// */
+    /*MISE EN FORME DES ELEMENTS BALISES*/
+    h2 {
+        font-size: 0.8em;
+    margin-left: 1em;
+    }
+
+    h3 {
+        font-size: smaller;
+    }
+
+    h4 {
+        font-size: smaller;
+    }
+
+    p {
+        font-size: smaller;
+    }
+
+    ul {
+        padding: 0.5em 3em 0 0;
+    }
+
+
+    /* ////////////////////////////////////// */
+    /* HEADER */
+    .header-container {
+        height: 6em;
+    }
+
+    /* LOGO D'ENTETE */
+    .header-logo {
+        padding-top: 0.5em;
+        padding-left: 3.5em;
+    }
+
+    .header-logo:hover {
+        transform: rotate(-2deg) scale(1.1);
+    }
+
+
+    /* MENU DE NAVIGATION */
+    .header-nav a {
+        width: 6em;
+        padding: 1em 1em 0 1em;
+    }
+
+    .search-field .fas {
+        width: 3em;
+        height: 3em;
+    }
+
+    .search-field-form {
+        margin-top: 0.5em;
+    }
+
+    #search-field-submit {
+        height: 3em;
+        padding-left: 1em;
+    }
+
+    .search-button {
+        width: 9em;
+        height: 3em;
+    }
+
+    .filter-elements {
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0.5em 0 0.5em 0;
+    }
+
+    .filter-button {
+        height: 1.8em;
+    }
+
+    .filter-button .fas {
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .filter-button:hover {
+        border: none;
+    }
+
+    /* ////////////////////////////////////// */
+    /*SECTION HEBERGEMENT*/
+    .hosting-container:nth-child(1) {
+        padding: 1em;
+        margin: 0 0 0 0.5em;
+    }
+
+    .hosting-selection-container {
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .hosting-selection-container .thumbnail a {
+        width: 11em;
+        margin: 0em 1em 0 1em;
+        align-items: center;
+        border-bottom: #fff solid 0.2em;
+    }
+
+    .hosting-selection-container .thumbnail a:hover {
+        border-bottom: #0065fc solid 0.2em;
+    }
+
+    .hosting-selection-container .thumbnail img {
+        height: 7em;
+    }
+
+    .hosting-selection-container * {
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* ////////////////////////////////////// */
+    /*SECTION ARTICLES POPULAIRES*/
+    .most-popular-container:nth-child(2) {
+        padding: 1em;
+        margin: 0 0.5em 0 0.5em;
+    }
+
+    .most-popular-title .fas {
+        font-size: 1em;
+    }
+
+    .most-popular-selection-container {
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .most-popular-selection-container .thumbnail {
+        margin: 0.5em 0.1em 0.5em 0.1em;
+    }
+
+    .most-popular-selection-container .thumbnail:hover {
+        border-bottom: #0065FC solid 0.2em;
+    }    
+
+    .most-popular-selection-container .thumbnail img {
+        width: 5em;
+        height: 7em; /*auto;*/
+    }
+    
+    .popular-thumbnail * {
+        padding-left: 0.2em;
+    }
+
+    .popular-thumbnail h3 {
+        font-size: smaller;
+    }
+
+    .popular-thumbnail .star-result {
+        align-items: flex-end;
+    }    
+
+    /* ////////////////////////////////////// */
+    /*SECTION ACTIVITES*/
+    .activity-container {
+        margin: 1em 0.5em;   
+    }
+
+    .activity-article-content-1 a {
+        width: 12em;
+        margin: 1.3em;
+        justify-content: space-between;
+        border-bottom: #fff solid 0.5em;    
+    }
+
+    .activity-article-content-1 a:hover {
+        border-bottom: #0065FC solid 0.2em;    
+    }
+
+    .activity-article-content-1 img {
+        width: inherit;
+    }
+
+    .activity-article-content-2-1 a {
+        width: 12em;
+        justify-content: space-between;
+        border-bottom: #fff solid 0.2em;    
+    }
+
+    .activity-article-content-2-1 a:hover {
+        border-bottom: #0065FC solid 0.2em;
+    }
+
+    .activity-article-content-2-1 img {
+        width: inherit;
+    }
+
+
+    /* ////////////////////////////////////// */
+    /*SECTION FOOTER*/
+    nav {
+        margin-top: 0;
+        padding: 0 2em 1em 2em;
+    }
+
+    .site-footer a {
+        font-size: x-small;
+    }
+
+
+    /* ////////////////////////////////////// */
+    /*MISE EN FORME GLOBALE DU CONTENU DES VIGNETTES*/
+    .thumbnail {
+        margin: 0.5em 0.1em;
+    }
+
+    .thumbnail h3, p {
+        margin: 0.1em 0.1em 0.1em 0.2em;
+    }
+
+    .thumbnail-title:nth-child(1) {
+        flex: 2;
+    }
+
+    .thumbnail .star-result:nth-child(2) {
+        margin: 0.1em 0.2em 0.1em 0.2em;
+    }
+
+    .fa, .fas {
+        font-size: x-small;
+    }
+
+}

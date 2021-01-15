@@ -1,0 +1,294 @@
+/* ///////////////////////////////////// */
+/* RESPONSIVE CSS Min:700 --> Max:1023px */
+/* ///////////////////////////////////// */
+
+@media all and (min-width:700px) and (max-width: 1023px) {
+
+
+    /* ///////////////////////////////////// */
+    /*MISE EN FORME DES BALISES*/
+    h2 {
+        font-size: 1.25em;
+    }
+
+    /* ///////////////////////////////////// */
+    /*HEADER /MENU DE NAVIGATION*/
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .header-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-evenly; /*center;*/
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .header-nav a {
+        padding: 1em 1em 1em 1em;
+        border-top: none;
+        border-bottom: 0.1em solid #FFF;
+    }
+
+    .header-nav a:hover {
+        padding: 1em 1em 1em 1em;
+        border-top: none;
+        border-bottom: 0.1em solid #0065FC;
+    }     
+
+    .header-nav .hosting-button {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .header-nav .activity-button {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+    }    
+
+    .header-nav .register-button {
+        font-size: 1.5em;
+        font-weight: bold;
+        border-bottom: none;
+    }
+
+    .header-logo {
+        transform: none;                
+    }    
+
+    .header-logo:hover {
+        transform: none;   
+    }
+
+    /* ///////////////////////////////////// */
+    /*CHAMPS ET FILTRES DE RECHERCHE*/
+    .search-header {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }    
+
+    .search-field {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;    
+    }
+
+    .search-field .fas {
+        width: 3em;
+        height: 3em;
+    }
+
+    #search-field-submit {
+        width: 25em;
+        height: 3em;
+    }
+        
+    .search-button {
+        width: 13em;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filter-elements a {
+        margin: 1em 0 0 0.5em;
+        flex-flow: row nowrap;
+        font-size: 0.6em; 
+    }
+
+    .filter-elements {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 0 1em 0;
+    }
+
+    .filter-button .fas {
+        margin-right: 0.5em;
+    }
+
+    .search-result {
+        justify-content: center;
+    }
+
+    /* ///////////////////////////////////// */
+    /*CONTENEUR PRINCIPAL*/
+    main {
+        justify-content: center;
+    }
+
+    /* ///////////////////////////////////// */
+    /*HEBERGEMENT*/
+    .hosting-container:nth-child(1) {
+        flex: none;
+        order: 2;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        padding: 1em;
+        margin: 0.5em 1em 0.5em 1em;
+    }
+
+    .hosting-selection-container {
+        display: block;
+        flex-direction: column;
+    }
+
+    .hosting-selection-container .thumbnail a {
+        width: 90%;
+        height: 18em;
+    }
+
+    .hosting-selection-container .thumbnail a:hover {
+    transition: none;
+    transform: none;        
+    }
+
+    /* ///////////////////////////////////// */
+    /*LES PLUS POPULAIRES*/
+    .most-popular-container:nth-child(2) {
+        flex: none;
+        order: 1;
+        width: 90%;
+        height: auto;
+        padding: 1em;
+        margin: 0.5em 1em 0.5em 1em;
+    }
+
+    .most-popular-selection-container {
+        align-items: center;
+    }
+
+    .most-popular-selection-container .thumbnail {
+        width: 90%;
+    }
+
+    .most-popular-selection-container .thumbnail a {
+        height: 18em;
+    }
+
+    .most-popular-selection-container .thumbnail:hover {
+        border-bottom: none;
+        border-right: #0065FC solid 0.5em;        
+        transition: none;
+        transform: none;      
+    }
+
+    .most-popular-selection-container .thumbnail img {
+        width: 16em;
+        height: auto;
+        border-radius: 1.2em 0 0 1.2em;
+        object-fit: cover;
+    }
+
+    /* ///////////////////////////////////// */
+    /*ACTIVITÉS*/
+    .activity-container {
+        order: 3;
+        width: 90%;
+        height: auto;
+        padding: 1em;
+        margin: 0.5em 1em 0.5em 1em;
+        border-radius: 2em;
+        background-color: #F2F2F2;
+        box-shadow: 0.05em 0.05em 0.5em 0.1em rgba(0, 0, 0, 0.1);    
+    }
+
+    .activity-selection-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* ///////////////////////////////////// */
+    /*VIGNETTES CONTENEUR #1*/
+    .activity-article-content-1 {
+        display: flex;
+        height: 18em;
+    }
+
+    .activity-article-content-1 img {
+        width: inherit;
+    }    
+
+    .activity-article-content-1 a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        height: 100%;
+        /*margin: 1.3em;
+        border-radius: 2em;*/
+    }
+
+    .activity-article-content-1 a:hover {
+        border-bottom: #0065FC solid 0.5em;
+        transition: none; 
+        transform: none;       
+    }
+
+    /* ///////////////////////////////////// */
+    /*VIGNETTES CONTENEUR #2*/
+    .activity-article-content-2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3em;
+    }
+
+    .activity-article-content-2-1 {
+        display: flex;
+        width: 100%;
+    }
+
+    .activity-article-content-2-1 a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 19em;
+    }
+
+    .activity-article-content-2-1 img {
+        width: 100%;
+    }    
+
+    .activity-article-content-2-1 a:hover {
+        border-bottom: #0065FC solid 0.5em;    
+        transition: none; 
+        transform: none; 
+    }
+
+
+    /* ///////////////////////////////////// */
+    /*SECTION FOOTER*/
+    .nav {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 1em;
+        padding: 0 2em 1em 2em;
+    }
+
+
+    /* ///////////////////////////////////// */
+    /*MISE EN FORME GLOBALE DU CONTENU DES VIGNETTES*/
+    ul {
+        display: block;
+        list-style-type: none;
+        padding: 0.2em 1em 0.2em 0em;
+    }
+
+}
