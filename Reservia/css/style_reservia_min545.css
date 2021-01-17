@@ -1,0 +1,376 @@
+/* ////////////////////////////////////// */
+/* RESPONSIVE CSS Min:545px --> Max:767px */
+/* ////////////////////////////////////// */
+
+@media all and (min-width:545px) and (max-width: 767px) {
+
+
+    /* ///////////////////////////////////// */
+    /*MISE EN FORME DES BALISES*/
+    h2 {
+        font-size: 1.2em;
+        margin-left: 1em;
+    }
+
+    p {
+        padding: 0 0 0 1em;
+    }
+
+
+    /* ///////////////////////////////////// */
+    /*HEADER /MENU DE NAVIGATION*/
+    header {
+        width: fit-content;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .header-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-evenly; /*center;*/
+        /*width: 100%;*/
+        padding-right: 0;
+        padding-top: 5em;
+    }
+
+    .header-nav a {
+        padding: 1em 1em 1em 1em;
+        border-top: none;
+        border-bottom: 0.1em solid #FFF;
+    }
+
+    .header-nav a:hover {
+        padding: 1em 1em 1em 1em;
+        border-top: none;
+        border-bottom: 0.1em solid #0065FC;
+    }     
+
+    .header-nav .hosting-button {
+        font-size: 1.4em;
+        font-weight: bold;
+        /*text-align: center;*/
+    }
+
+    .header-nav .activity-button {
+        font-size: 1.4em;
+        font-weight: bold;
+        /*text-align: center;*/
+    }    
+
+    .header-nav .register-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;        
+        font-size: 1.5em;
+        font-weight: bold;
+        border-bottom: none;
+    }
+
+    .header-nav .register-button:hover {
+        border-bottom: none;
+    }
+
+
+    /* LOGO D'ENTETE */
+    .header-logo {
+        padding-top: 0.2em;
+        padding-left: 1.2em;
+        transform: none;
+        
+        position: absolute;             
+    }    
+
+    .header-logo:hover {
+        transform: none;   
+    }
+
+    .svg-logo {
+        width: 9em;
+    }
+
+
+    /* ///////////////////////////////////// */
+    /*CHAMPS ET FILTRES DE RECHERCHE*/
+    .search-container {
+        padding: 1em;
+    }
+
+    .search-header {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }    
+
+    .search-field {
+        width: 100%;
+/*        display: flex;*/
+        justify-content: center;
+        margin-top: 1em;    
+    }
+
+    .search-field .fas {
+        width: 3em;
+        height: 3em;
+    }
+
+    .search-field-form {
+        flex-flow: row nowrap;
+    }
+
+    #search-field-submit {
+        width: 22em;
+        height: 3em;
+    }
+        
+    .search-button {
+        width: 10em;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filter-elements a {
+        margin: 1em 0 0 0.5em;
+/*        flex-flow: row nowrap;*/
+        font-size: 0.8em; 
+    }
+
+    .filter-elements {
+        /*justify-content: center;*/
+        align-items: center;
+        width: 100%;
+        margin: 0 0 1em 0;
+        flex-wrap: wrap;
+    }
+
+    .filter-button .fas {
+        margin-right: 0.5em;
+    }
+
+    .search-result {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .search-result .fas {
+        margin: 0;
+    }
+
+    /* ///////////////////////////////////// */
+    /*CONTENEUR PRINCIPAL*/
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ///////////////////////////////////// */
+    /*HEBERGEMENT*/
+    .hosting-container:nth-child(1) {
+        flex: none;
+        order: 2;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 1em;
+        margin: 0.5em 1em 0.5em 1em;
+    }
+
+    .hosting-title {
+        display: flex;
+        width: inherit;
+    }    
+
+    .hosting-selection-container {
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+    }
+
+    .hosting-selection-container .thumbnail a {
+        width: 90%;
+        height: 18em;
+    }
+
+    .hosting-selection-container .thumbnail a:hover {
+    transition: none;
+    transform: none;        
+    }
+
+    /* ///////////////////////////////////// */
+    /*LES PLUS POPULAIRES*/
+    .most-popular-container:nth-child(2) {
+        flex: none;
+        order: 1;
+        width: 100%;
+        height: auto;
+        padding: 1em;
+        margin: 0.5em 1em 0.5em 1em;
+    }
+
+    .most-popular-title .fas {
+        padding-right: 1em;
+    }
+
+    .most-popular-selection-container {
+        align-items: center;
+    }
+
+    .most-popular-selection-container .thumbnail {
+        width: 90%;
+    }
+
+    .most-popular-selection-container .thumbnail a {
+        height: 18em;
+    }
+
+    .most-popular-selection-container .thumbnail:hover {
+        border-bottom: none;
+        border-right: #0065FC solid 0.5em;        
+        transition: none;
+        transform: none;      
+    }
+
+    .most-popular-selection-container .thumbnail img {
+        width: 16em;
+        height: auto;
+        border-radius: 1.2em 0 0 1.2em;
+        object-fit: cover;
+    }
+
+    /* ///////////////////////////////////// */
+    /*ACTIVITÉS*/
+    .activity-container {
+        order: 3;
+        width: 100%;
+        height: auto;
+        padding: 1em;
+        margin: 0.5em 1em 0.5em 1em;
+        border-radius: 2em;
+        background-color: #F2F2F2;
+        box-shadow: 0.05em 0.05em 0.5em 0.1em rgba(0, 0, 0, 0.1);    
+    }
+
+    .activity-title {
+        display: flex;
+        width: inherit;
+    }
+
+    .activity-title h2 {
+        margin-left: inherit;
+    }    
+
+    .activity-selection-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* ///////////////////////////////////// */
+    /*VIGNETTES CONTENEUR #1*/
+    .activity-article-content-1 {
+        display: flex;
+        height: 18em;
+        width: inherit;
+    }
+
+    .activity-article-content-1 img {
+        width: inherit;
+    }    
+
+    .activity-article-content-1 a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        height: 100%;
+        /*margin: 1.3em;
+        border-radius: 2em;*/
+    }
+
+    .activity-article-content-1 a:hover {
+        border-bottom: #0065FC solid 0.5em;
+        transition: none; 
+        transform: none;       
+    }
+
+    /* ///////////////////////////////////// */
+    /*VIGNETTES CONTENEUR #2*/
+    .activity-article-content-2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3em;
+        width: inherit;
+    }
+
+    .activity-article-content-2-1 {
+        display: flex;
+        width: 100%;
+    }
+
+    .activity-article-content-2-1 a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 19em;
+    }
+
+    .activity-article-content-2-1 img {
+        width: 100%;
+    }    
+
+    .activity-article-content-2-1 a:hover {
+        border-bottom: #0065FC solid 0.5em;    
+        transition: none; 
+        transform: none; 
+    }
+
+
+    /* ///////////////////////////////////// */
+    /*SECTION FOOTER*/
+    nav {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 1em;
+        padding: 0 2em 1em 2em;
+    }
+
+    .site-footer h4 {
+        margin: 1em 0;
+    }
+
+    .site-footer li {
+/*        margin: 0.5em;*/
+        padding: 0.2em 1em 0.2em 0em;
+        font-size: small;    
+    }
+
+    /* ///////////////////////////////////// */
+    /*MISE EN FORME GLOBALE DU CONTENU DES VIGNETTES*/
+    ul {
+        display: block;
+        list-style-type: none;
+        padding: 0.2em 1em 0.2em 0em;
+    }
+
+    .thumbnail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }     
+
+}

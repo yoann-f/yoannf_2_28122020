@@ -78,16 +78,17 @@
     }
 
     .filter-button {
-        height: 1.8em;
+        height: 2.2em;
+        border: 0.1em solid #f2f2f2;
     }
 
     .filter-button .fas {
-        width: 2.5em;
-        height: 2.5em;
+        width: 3.5em;
+        height: 3.5em;
     }
 
     .filter-button:hover {
-        border: none;
+        border: #0065Fc solid 0.1em;  
     }
 
     /* ////////////////////////////////////// */

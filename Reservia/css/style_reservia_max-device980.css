@@ -1,12 +1,16 @@
-/* ///////////////////////////////////// */
-/* RESPONSIVE CSS Min:700 --> Max:1023px */
-/* ///////////////////////////////////// */
+/* /////////////////////////////////// */
+/* RESPONSIVE CSS DEVICE --> Max:980px */
+/* /////////////////////////////////// */
 
-@media all and (min-width:700px) and (max-width: 1023px) {
+@media only screen and (max-device-width: 980px) {
 
 
     /* ///////////////////////////////////// */
     /*MISE EN FORME DES BALISES*/
+    body {
+        font-size: 110%;
+    }
+    
     h2 {
         font-size: 1.25em;
     }
@@ -53,6 +57,9 @@
     }    
 
     .header-nav .register-button {
+        position: fixed;
+        top: 0;
+        right: 0;        
         font-size: 1.5em;
         font-weight: bold;
         border-bottom: none;
@@ -65,6 +72,13 @@
     .header-logo:hover {
         transform: none;   
     }
+
+
+    /* LOGO D'ENTETE */
+    .svg-logo {
+        width: 8em;
+    }
+
 
     /* ///////////////////////////////////// */
     /*CHAMPS ET FILTRES DE RECHERCHE*/
