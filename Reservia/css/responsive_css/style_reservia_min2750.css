@@ -1,0 +1,38 @@
+/* ////////////////////////////////////// */
+/* RESPONSIVE CSS Min:2160 --> Max:3840px */
+/* ////////////////////////////////////// */
+
+
+@media all and (min-width: 2750px) and (max-width: 3840px) {
+
+
+    /* ELEMENTS DE LA SECTION "LES PLUS POPULAIRE" */
+    .most-popular-selection-container .thumbnail {
+        transition: transform 350ms ease-out;       
+    }
+
+.most-popular-selection-container .thumbnail:hover {
+        transition: transform 250ms ease-in;
+        transform: rotate(1.5deg) scale(1.05);        
+    }
+
+
+    /* ELEMENT DE LA SECTION "ACTIVITES" */
+    .activity-article-content-1 a {
+        width: 36em;
+        margin: 1.3em;
+    }
+
+    .activity-article-content-1 img {
+        width: inherit;
+    }
+
+    .activity-article-content-2-1 a {
+        width: 36em;
+        margin: 1em 0.6em;
+    }
+
+    .activity-article-content-2-1 img {
+        width: inherit;
+    }
+}

@@ -1,0 +1,77 @@
+/* ////////////////////////////////////// */
+/* RESPONSIVE CSS Min:2160 --> Max:2750px */
+/* ////////////////////////////////////// */
+
+
+@media all and (min-width: 2160px) and (max-width: 2750px) {
+
+    /* MISE EN FORME DES BALISES*/
+    a {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    /* HEADER */
+    .header-nav {
+        padding-right: 8em;
+    }
+
+    .header-nav a {
+        width: 12em;
+    }
+
+    /* LOGO */
+    .header-logo {
+        padding-top: 1em;
+        padding-left: 8em;
+    }
+
+    .svg-logo {
+        width: 14em;
+    }
+
+    /* MAIN CONTENT */
+    /* ELEMENTS DE LA SECTION "HEBERGEMENT" */
+    .hosting-container:nth-child(1) {
+        margin: 0 4em 0 4em;
+    }
+
+    .hosting-selection-container .thumbnail a {
+        width: 24em;
+    }
+
+
+    /* ELEMENTS DE LA SECTION "PLUS POPULAIRE" */
+    .most-popular-container:nth-child(2) {
+        margin: 0 4em 0 4em;
+    }
+
+
+    /* ELEMENT DE LA SECTION "ACTIVITES" */
+    .activity-container {
+        margin: 2em 3em 0 3em;
+    }
+
+    .activity-article-content-1 a {
+        width: 30em;
+        margin: 1.3em;
+    }
+
+    .activity-article-content-1 img {
+        width: inherit;
+    }
+
+    .activity-article-content-2-1 a {
+        width: 30em;
+        margin: 1em 0.6em;
+    }
+
+    .activity-article-content-2-1 img {
+        width: inherit;
+    }
+
+
+}
