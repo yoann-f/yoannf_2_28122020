@@ -111,6 +111,10 @@ ul {
     /*border: 3px solid rgb(0, 72, 167); /*Couleur de fond pour visualisation des bouton du menu (A supprimer)*/
 }
 
+.search-field-for-mobile {
+    display: none;
+}
+
 .search-field .fas {
     width: 4em;
     height: 4em;

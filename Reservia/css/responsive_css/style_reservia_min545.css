@@ -2,7 +2,7 @@
 /* RESPONSIVE CSS Min:545px --> Max:767px */
 /* ////////////////////////////////////// */
 
-@media all and (min-width:545px) and (max-width: 767px) {
+@media screen and (min-width:545px) and (max-width: 767px) {
 
 
     /* ///////////////////////////////////// */
@@ -19,9 +19,6 @@
 
     /* ///////////////////////////////////// */
     /*HEADER /MENU DE NAVIGATION*/
-    header {
-        width: fit-content;
-    }
 
     .header-container {
         display: flex;

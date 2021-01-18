@@ -2,11 +2,16 @@
 /* RESPONSIVE CSS Min:320px --> Max:544px */
 /* ////////////////////////////////////// */
 
-@media all and (min-width:320px) and (max-width:544px) {
+
+@media all and (max-width:544px) {
 
 
     /* ///////////////////////////////////// */
     /*MISE EN FORME DES BALISES*/
+    body {
+        width: fit-content;
+    }
+
     h2 {
         font-size: 1em;
         margin-left: 1em;
@@ -24,10 +29,6 @@
 
     /* ///////////////////////////////////// */
     /*HEADER /MENU DE NAVIGATION*/
-    header {
-        width: fit-content;
-    }
-
     .header-container {
         display: flex;
         flex-direction: column;
@@ -113,30 +114,66 @@
     }    
 
     .search-field {
-        justify-content: center;
+        display: none;
     }
 
-    .search-field .fas {
+    .search-field-for-mobile {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: auto;
+
+        /*border: 3px solid rgb(0, 72, 167); /*Couleur de fond pour visualisation des bouton du menu (A supprimer)*/
+    }    
+
+    .search-field-for-mobile .fas {
         width: 2em;
-        height: 2em;
+        height: 2em;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 1.2em 0 0 1.2em;
+    }
+
+    .search-field-for-mobile .fas:hover {
+        background: rgb(242,242,242);
+        background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 0%, rgba(235,235,235,1) 100%);
+        text-shadow: 0.02em 0.02em 0.02em #000;
+        cursor: pointer;
     }
 
     .search-field-form {
-        flex-flow: row nowrap;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
     }
 
     #search-field-submit {
         width: 13em;
         height: 2em;
     }
-        
-    .search-button {
+
+    .search-button-for-mobile .fas {
+        background-color: #0065fc;
+        border-radius: 0.5em 0.5em 0.5em 0.5em ;
+        color: #FFF;
+    }
+
+    .search-button-for-mobile .fas:hover {
+        background: rgb(0,101,252);
+        background: linear-gradient(180deg, rgba(0,101,252,1) 0%, rgba(0,101,252,1) 0%, rgba(0,91,228,1) 100%);
+        text-shadow: 0.02em 0.02em 0.02em #000;
+        cursor: pointer;
+    }
+
+    /*.search-button {
         width: 7em;
         height: 2em;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    }*/
 
     .filter-elements a {
         margin: 1em 0 0 0.5em;
