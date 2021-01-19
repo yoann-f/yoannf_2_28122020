@@ -1,17 +1,16 @@
-/* ////////////////////////////////////// */
-/* RESPONSIVE CSS Min:320px --> Max:544px */
-/* ////////////////////////////////////// */
+/* //////////////////////// */
+/* RESPONSIVE CSS Max:544px */
+/* //////////////////////// */
 
 
 @media all and (max-width:544px) {
 
-
-    /* ///////////////////////////////////// */
-    /*MISE EN FORME DES BALISES*/
     body {
         width: fit-content;
-    }
+    }    
 
+    /* ///////////////////// */
+    /* MISE EN FORME DE BASE */
     h2 {
         font-size: 1em;
         margin-left: 1em;
@@ -26,23 +25,42 @@
         text-align: center;
     }
 
+    ul {
+        padding: 0.2em 1em 0.2em 0em;
+        font-size: small;
+    }
 
-    /* ///////////////////////////////////// */
-    /*HEADER /MENU DE NAVIGATION*/
+
+    /* ////////////////////////////////////////////////////////////////////////// */
+    /* CONTENEUR POUR LE LOGO ET LE MENU DE NAVIGATION (PLACÉS EN ENTETE DU SITE) */
     .header-container {
-        display: flex;
         flex-direction: column;
         position: relative;
     }
+
+    /* REGLES POUR LA MISE EN FORME DU LOGO */
+    .header-logo {
+        padding-top: 0.2em;
+        padding-left: 1em;
+        transition: none;
+        position: absolute;             
+    }    
+
+    .header-logo:hover {
+        transform: none;
+        transition: none;   
+    }
+
+    .svg-logo {
+        width: 8em;
+    }    
     
+    /* REGLES POUR LA MISE EN FORME DU MENU DE NAVIGATION */
     .header-nav {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-evenly; /*center;*/
-        /*width: 100%;*/
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        padding-top: 5em;        
         padding-right: 0;
-        padding-top: 5em;
     }
 
     .header-nav a {
@@ -58,13 +76,9 @@
         border-bottom: 0.1em solid #0065FC;
     }     
 
-    .header-nav .hosting-button {
+    .header-nav .hosting-button, .activity-button {
         font-size: 1em;
-    }
-
-    .header-nav .activity-button {
-        font-size: 1em;
-    }    
+    } 
 
     .header-nav .register-button {
         position: absolute;
@@ -82,37 +96,13 @@
     }
 
 
-    /* LOGO D'ENTETE */
-    .header-logo {
-        padding-top: 0.2em;
-        padding-left: 1em;
-        transform: none;
-        transition: none;
-        position: absolute;             
-    }    
-
-    .header-logo:hover {
-        transform: none;   
-    }
-
-    .svg-logo {
-        width: 8em;
-    }
-
-
-    /* ///////////////////////////////////// */
-    /*CHAMPS ET FILTRES DE RECHERCHE*/
+    /* ///////////////////////////////////////////////////////////////////////// */
+    /* CONTENEUR POUR LE CHAMPS DE RECHERCHE, LE FILTRES ET LE NOMBRE DE RESULTAT*/
     .search-container {
         padding: 1em;
     }
 
-    .search-header {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        text-align: center;
-    }    
-
+    /* MODE D'AFFICHAGE "DESKTOP" OU "MOBILE" POUR LE CHAMPS DE RECHERCHE */
     .search-field {
         display: none;
     }
@@ -122,38 +112,26 @@
         flex-flow: row nowrap;
         justify-content: center;
         width: auto;
+    }
 
-        /*border: 3px solid rgb(0, 72, 167); /*Couleur de fond pour visualisation des bouton du menu (A supprimer)*/
-    }    
+    /* MISE EN FORME DES ELEMENTS DU MENU DE RECHERCHE */
+    .search-field-form {
+        justify-content: center;
+    }        
 
-    .search-field-for-mobile .fas {
+    /* BOUTON DE RECHERCHE PAR SELECTION SUR CARTE (GOOGLE MAP, MAPPY,...) */
+    .search-field-form .fas {
         width: 2em;
         height: 2em;    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #f2f2f2;
-        border-radius: 1.2em 0 0 1.2em;
     }
 
-    .search-field-for-mobile .fas:hover {
-        background: rgb(242,242,242);
-        background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 0%, rgba(235,235,235,1) 100%);
-        text-shadow: 0.02em 0.02em 0.02em #000;
-        cursor: pointer;
-    }
-
-    .search-field-form {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-    }
-
-    #search-field-submit {
+    /* CHAMPS DE TEXTE POUR LE BOUTON DE RECHERCHE */
+    .search-field-form #search-field-submit {
         width: 13em;
         height: 2em;
     }
 
+    /* BOUTON (ICONE) POUR LANCER LA RECHERCHE */
     .search-button-for-mobile .fas {
         background-color: #0065fc;
         border-radius: 0.5em 0.5em 0.5em 0.5em ;
@@ -167,17 +145,11 @@
         cursor: pointer;
     }
 
-    /*.search-button {
-        width: 7em;
-        height: 2em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }*/
-
+    
+    /* REGLES POUR LA MISE EN FORME DE LA PARTIE: FILTRE DE RECHERCHE */
     .filter-elements a {
-        margin: 1em 0 0 0.5em;
-/*        flex-flow: row nowrap;*/
+        /*margin: 1em 0 0 0.5em;
+        /* flex-flow: row nowrap;*/
         font-size: 0.8em; 
     }
 
@@ -213,20 +185,17 @@
         font-size: xx-small;
     }
 
-    /* ///////////////////////////////////// */
+    /* ///////////////// */
     /*CONTENEUR PRINCIPAL*/
     main {
-        display: flex;
         justify-content: center;
     }
 
-    /* ///////////////////////////////////// */
-    /*HEBERGEMENT*/
+    /* ////////////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA PARTIE: SECTION HEBERGEMENT */
     .hosting-container:nth-child(1) {
         flex: none;
         order: 2;
-        display: flex;
-        flex-flow: column nowrap;
         align-items: center;
         width: 100%;
         height: auto;
@@ -240,7 +209,6 @@
     }
 
     .hosting-selection-container {
-        display: flex;
         flex-direction: column;
         width: inherit;
     }
@@ -248,7 +216,6 @@
     .hosting-selection-container .thumbnail a {
         width: 90%;
         margin: 1em 1em 0 1em;
-/*        height: 18em;*/
     }
 
     .hosting-selection-container .thumbnail a:hover {
@@ -260,15 +227,14 @@
         height: 7em;
     }
 
-
-    /*BOUTON D'AFFICHAGE SUPPLEMENTAIRE - BAS DE SECTION HEBERGEMENT*/
+    /* BOUTON D'AFFICHAGE SUPPLEMENTAIRE - BAS DE SECTION HEBERGEMENT */
     .hosting-more > a {
-        margin: 0;;
+        margin: 0;
     }
 
 
-    /* ///////////////////////////////////// */
-    /*LES PLUS POPULAIRES*/
+    /* ////////////////////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA PARTIE: SECTION LES PLUS POPULAIRES */
     .most-popular-container:nth-child(2) {
         flex: none;
         order: 1;
@@ -286,6 +252,7 @@
         align-items: center;
     }
 
+    /* REGLES POUR LA MISE EN FORME DES VIGNETTES DE LA SECTION "LES PLUS POPULAIRES" */
     .most-popular-selection-container .thumbnail {
         width: 90%;
     }
@@ -308,8 +275,8 @@
         object-fit: cover;
     }
 
-    /* ///////////////////////////////////// */
-    /*ACTIVITÉS*/
+    /* ////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA SECTION "ACTIVITES" */
     .activity-container {
         order: 3;
         margin: 0.5em 1em 0.5em 1em;
@@ -335,8 +302,7 @@
         justify-content: center;
     }
 
-    /* ///////////////////////////////////// */
-    /*VIGNETTES CONTENEUR #1*/
+    /* REGLES POUR LA MISE EN FORME DES VIGNETTES (CONTENEUR 1) DE LA SECTION "ACTIVITES" */
     .activity-article-content-1 {
         display: flex;
         height: 12em;
@@ -359,17 +325,15 @@
     }
 
     .activity-article-content-1 a:hover {
-        border-bottom: #0065FC solid 0.5em;
         transition: none; 
         transform: none;       
     }
 
-    /* ///////////////////////////////////// */
-    /*VIGNETTES CONTENEUR #2*/
+    /* REGLES POUR LA MISE EN FORME DES VIGNETTES (CONTENEUR 2) DE LA SECTION "ACTIVITES" */
     .activity-article-content-2 {
         display: flex;
         flex-wrap: wrap;
-/*        margin-top: 3em;*/
+        /* margin-top: 3em; */
         width: 100%;
     }
 
@@ -379,27 +343,23 @@
     }
 
     .activity-article-content-2-1 a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 100%;
         height: 9.5em;
         margin: 1em 0;
+    }
+
+    .activity-article-content-2-1 a:hover {
+        transition: none; 
+        transform: none; 
     }
 
     .activity-article-content-2-1 img {
         width: 100%;
     }    
 
-    .activity-article-content-2-1 a:hover {
-        border-bottom: #0065FC solid 0.5em;    
-        transition: none; 
-        transform: none; 
-    }
 
-
-    /* ///////////////////////////////////// */
-    /*SECTION FOOTER*/
+    /* /////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA SECTION "FOOTER" */
     footer {
         min-width: 0;
     }
@@ -419,13 +379,8 @@
     }
 
 
-    /* ///////////////////////////////////// */
-    /*MISE EN FORME GLOBALE DU CONTENU DES VIGNETTES*/
-    ul {
-        padding: 0.2em 1em 0.2em 0em;
-        font-size: small;
-    }
-
+    /* //////////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME GLOBALE DU CONTENU DES VIGNETTES*/
     .thumbnail {
         display: flex;
         flex-direction: column;
@@ -451,5 +406,4 @@
     .star-result .fas {
         font-size: 0.8em;
     }
-
 }

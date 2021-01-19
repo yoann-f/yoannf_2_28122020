@@ -5,7 +5,8 @@
 
 @media all and (min-width: 2160px) and (max-width: 2750px) {
 
-    /* MISE EN FORME DES BALISES*/
+    /* ///////////////////// */
+    /* MISE EN FORME DE BASE */
     a {
         font-size: 1em;
     }
@@ -14,28 +15,48 @@
         font-size: 1.6em;
     }
 
-    /* HEADER */
+    /* ////////////////////////////////////////////////////////////////////////// */
+    /* CONTENEUR POUR LE LOGO ET LE MENU DE NAVIGATION (PLACÉS EN ENTETE DU SITE) */
+
+    /* REGLES POUR LA MISE EN FORME DU LOGO */
+    .header-logo {
+        padding-top: 1em;
+        padding-left: 8%;
+    }
+
+    .svg-logo {
+        width: 16em;
+    }    
+
+    /* REGLES POUR LA MISE EN FORME DU MENU DE NAVIGATION */    
     .header-nav {
-        padding-right: 8em;
+        padding-right: 8%;
     }
 
     .header-nav a {
         width: 12em;
     }
 
-    /* LOGO */
-    .header-logo {
-        padding-top: 1em;
-        padding-left: 8em;
+
+    /* ///////////////////////////////////////////////////////////////////////// */
+    /* CONTENEUR POUR LE CHAMPS DE RECHERCHE, LE FILTRES ET LE NOMBRE DE RESULTAT*/
+    .search-container {
+        margin: 0 6% 0 6%;
+    }    
+
+
+    /* ////////////////// */
+    /* CONTENEUR PRINCIPAL*/
+    main {
+        justify-content: center;
+        margin: 0 6% 0 6%;
     }
 
-    .svg-logo {
-        width: 14em;
-    }
 
-    /* MAIN CONTENT */
-    /* ELEMENTS DE LA SECTION "HEBERGEMENT" */
+    /* ////////////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA PARTIE: SECTION HEBERGEMENT */ 
     .hosting-container:nth-child(1) {
+        flex: 3;
         margin: 0 4em 0 4em;
     }
 
@@ -44,15 +65,21 @@
     }
 
 
-    /* ELEMENTS DE LA SECTION "PLUS POPULAIRE" */
+    /* ////////////////////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA PARTIE: SECTION LES PLUS POPULAIRES */ 
     .most-popular-container:nth-child(2) {
         margin: 0 4em 0 4em;
     }
 
 
-    /* ELEMENT DE LA SECTION "ACTIVITES" */
+    /* ////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA SECTION "ACTIVITES" */
     .activity-container {
         margin: 2em 3em 0 3em;
+    }
+
+    .activity-selection-container {
+        justify-content: center;
     }
 
     .activity-article-content-1 a {
@@ -72,6 +99,4 @@
     .activity-article-content-2-1 img {
         width: inherit;
     }
-
-
 }

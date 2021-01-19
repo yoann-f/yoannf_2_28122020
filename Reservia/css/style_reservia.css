@@ -1,6 +1,6 @@
-/* ////////////////////////////////////// */
-/* DEFAULT CSS  Min:1752 --> Max:1920px   */
-/* ////////////////////////////////////// */
+/* /////////// */
+/* DEFAULT CSS */
+/* /////////// */
 
 * {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;    
@@ -11,8 +11,13 @@ body {
     margin: 0;
 }
 
-/* ///////////////////////////////////////////////////////////////////////////// */
-/*MISE EN FORME DES BALISES*/
+/* ///////////////////// */
+/* MISE EN FORME DE BASE */
+h2 {
+    font-size: 1.25em;
+    margin-left: 1em;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -22,19 +27,14 @@ p {
     padding: 0.5em;
 }
 
-h2 {
-    font-size: 1.25em;
-    margin-left: 1em;
-}
-
 ul {
     display: block;
     list-style-type: none;
     padding: 0.5em 11em 0 0;
 }
 
-/* ///////////////////////////////////////////////////////////////////////////// */
-/* HEADER */
+/* ////////////////////////////////////////////////////////////////////////// */
+/* CONTENEUR POUR LE LOGO ET LE MENU DE NAVIGATION (PLACÉS EN ENTETE DU SITE) */
 .header-container {
     display: flex;
     flex-flow: row wrap;
@@ -43,11 +43,10 @@ ul {
     top: 0;
     left: 0;
     background-color: #fff;
-
     /*border: 3px solid rgb(255, 208, 0); /*cadre de visualisation du menu de navigation  (A supprimer)*/    
 }
 
-/* LOGO D'ENTETE */
+/* REGLES POUR LA MISE EN FORME DU LOGO */
 .header-logo {
     padding-top: 1.2em;
     padding-left: 4em;
@@ -63,13 +62,12 @@ ul {
     width: 12em;
 }
 
-/* MENU DE NAVIGATION */
+/* REGLES POUR LA MISE EN FORME DU MENU DE NAVIGATION */
 .header-nav {
     display: flex;
     flex-flow: row wrap;
     padding-top: 0;
     padding-right: 4em;
-
     /*border: 3px solid darkgreen; /*Cadre de visualisation du menu latéral droit (A supprimer)*/
 }
 
@@ -78,7 +76,6 @@ ul {
     text-align: center;
     padding: 2em 1em 0 1em;
     border-top: 0.3em solid #fff;
-
     /*background-color: pink; /*Couleur de fond pour visualisation des bouton du menu (A supprimer)*/
 }
 
@@ -93,29 +90,34 @@ ul {
     color: #0065fc;
 }
 
+/* ///////////////////////////////////////////////////////////////////////// */
+/* CONTENEUR POUR LE CHAMPS DE RECHERCHE, LE FILTRES ET LE NOMBRE DE RESULTAT*/
 .search-container {
     display: flex;
     flex-direction: column;
     padding: 0 4em 0 4em;
     width: auto;
-
-    /*border: 3px solid rgb(0, 170, 162); /*Couleur de fond pour visualisation des bouton du menu (A supprimer)*/
 }
 
+/* MODE D'AFFICHAGE "DESKTOP" OU "MOBILE" POUR LE CHAMPS DE RECHERCHE */
 .search-field {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    width: auto;
-
-    /*border: 3px solid rgb(0, 72, 167); /*Couleur de fond pour visualisation des bouton du menu (A supprimer)*/
 }
 
 .search-field-for-mobile {
     display: none;
 }
 
-.search-field .fas {
+/* MISE EN FORME DES ELEMENTS DU MENU DE RECHERCHE */
+.search-field-form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* BOUTON DE RECHERCHE PAR SELECTION SUR CARTE (GOOGLE MAP, MAPPY,...) */
+.search-field-form .fas {
     width: 4em;
     height: 4em;
     display: flex;
@@ -125,47 +127,44 @@ ul {
     border-radius: 1.2em 0 0 1.2em;
 }
 
-.search-field .fas:hover {
+.search-field-form .fas:hover {
     background: rgb(242,242,242);
     background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 0%, rgba(235,235,235,1) 100%);
     text-shadow: 0.02em 0.02em 0.02em #000;
     cursor: pointer;
 }
 
-.search-field-form {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
-
-#search-field-submit {
+/* CHAMPS DE TEXTE POUR LE BOUTON DE RECHERCHE */
+.search-field-form #search-field-submit {
     width: 30em;
     height: 5em;
     padding-left: 2em;
     border: none;
 }
 
-.search-button {
-    color: #fff;
-    border: none;    
+/* BOUTON POUR LANCER LA RECHERCHE */
+.search-field-form .search-button {  
     width: 12em;
     height: 5em;
+    color: #fff;
+    border: none;    
     background-color: #0065fc;
     border-radius: 0 1.2em 1.2em 0 ;
 }
 
-.search-button:hover {
+.search-field-form .search-button:hover {
     background: rgb(0,101,252);
     background: linear-gradient(180deg, rgba(0,101,252,1) 0%, rgba(0,101,252,1) 0%, rgba(0,91,228,1) 100%);
     text-shadow: 0.05em 0.05em 0.1em #000;
     cursor: pointer;
 }
 
+
+/* REGLES POUR LA MISE EN FORME DE LA PARTIE: FILTRE DE RECHERCHE */
 .filter-elements {
     display: flex;
     flex-direction: row;
     margin: 2em 0 1em 0;
-
     /*border: 3px solid rgb(29, 92, 175); /*Couleur de fond pour visualisation des bouton du menu (A supprimer)*/    
 }
 
@@ -221,18 +220,17 @@ ul {
     color: #0065FC;
 }
 
-/* ///////////////////////////////////////////////////////////////////////////// */
-/*CONTENEUR PRINCIPAL*/
+/* ////////////////// */
+/* CONTENEUR PRINCIPAL*/
 main {
     display: flex;
     flex-flow: row wrap;
     width: auto;
-
     /*border: 3px solid rgb(182, 20, 20); /*Couleur de fond pour visualisation des bouton du menu (A supprimer)*/      
 }
 
-/* ///////////////////////////////////////////////////////////////////////////// */
-/*SECTION HEBERGEMENT*/
+/* ////////////////////////////////////////////////////////////// */
+/* REGLES POUR LA MISE EN FORME DE LA PARTIE: SECTION HEBERGEMENT */
 .hosting-container:nth-child(1) {
     flex: 3;    
     display: flex;
@@ -241,8 +239,7 @@ main {
     margin: 0 0 0 2em;
     border-radius: 1.2em;
     background-color: #F2F2F2;
-    box-shadow: 0.05em 0.05em 0.25em 0.1em rgba(0, 0, 0, 0.1);         
-
+    box-shadow: 0.05em 0.05em 0.25em 0.1em rgba(0, 0, 0, 0.1);
     /*border: #3e25ac solid 3px; /*Cadre pour visualisation (A supprimer)*/
 }
 
@@ -250,13 +247,11 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-
     /*border: #62ac25 solid 3px; /*Cadre pour visualisation (A supprimer)*/    
 }
 
 .hosting-selection-container .thumbnail a {
     width: 20em;
-
     display: flex;
     flex-flow: column wrap;
     padding: 0.2em;
@@ -284,7 +279,7 @@ main {
     object-fit: cover;
 }
 
-/*BOUTON D'AFFICHAGE SUPPLEMENTAIRE - BAS DE SECTION HEBERGEMENT*/
+/* BOUTON D'AFFICHAGE SUPPLEMENTAIRE - BAS DE SECTION HEBERGEMENT */
 .hosting-more {
     width: 100%;
     display: flex;
@@ -305,8 +300,8 @@ main {
 }
 
 
-/* ///////////////////////////////////////////////////////////////////////////// */
-/*SECTION ARTICLES POPULAIRES*/
+/* ////////////////////////////////////////////////////////////////////// */
+/* REGLES POUR LA MISE EN FORME DE LA PARTIE: SECTION LES PLUS POPULAIRES */
 .most-popular-container:nth-child(2) {
     display: flex;
     flex: 1;
@@ -315,8 +310,7 @@ main {
     margin: 0 2em 0 2em;
     border-radius: 1.2em;
     background-color: #F2F2F2;
-    box-shadow: 0.05em 0.05em 0.25em 0.1em rgba(0, 0, 0, 0.1);       
-    
+    box-shadow: 0.05em 0.05em 0.25em 0.1em rgba(0, 0, 0, 0.1);
     /*border: #3e25ac solid 3px; /*Cadre pour visualisation (A supprimer)*/
 }
 
@@ -336,7 +330,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     /*border: #62ac25 solid 3px; /*Cadre pour visualisation (A supprimer)*/    
 }
 
@@ -345,6 +338,7 @@ main {
     flex-flow: row nowrap;
 }
 
+/* REGLES POUR LA MISE EN FORME DES VIGNETTES DE LA SECTION "LES PLUS POPULAIRES" */
 .most-popular-selection-container .thumbnail {
     display: flex;
     flex-flow: row nowrap;
@@ -354,8 +348,7 @@ main {
     border-radius: 1.2em;
     box-shadow: 0.05em 0.05em 0.5em 0.1em rgba(0, 0, 0, 0.1);
     /*border-bottom: #fff solid 0.5em;*/
-    transition: transform 250ms ease-out;    
-
+    transition: transform 250ms ease-out;
     /*border: #ff8800 solid 3px; /*Cadre pour visualisation (A supprimer)*/     
 }
 
@@ -384,8 +377,8 @@ main {
 }*/
 
 
-/* ///////////////////////////////////////////////////////////////////////////// */
-/*SECTION ACTIVITES*/
+/* ////////////////////////////////////////////////////// */
+/* REGLES POUR LA MISE EN FORME DE LA SECTION "ACTIVITES" */
 .activity-container {
     display: flex;
     flex-direction: column;
@@ -480,14 +473,14 @@ main {
 }
 
 
-/* ///////////////////////////////////////////////////////////////////////////// */
-/*SECTION FOOTER*/
+/* /////////////////////////////////////////////////// */
+/* REGLES POUR LA MISE EN FORME DE LA SECTION "FOOTER" */
 footer {
     min-width: 100%;
     position: relative;
     background-color: #F2F2F2;
 
-    /*border: 3px solid #25ac25; /*Cadre pour visualisation*/
+    /*border: 3px solid #25ac25; /*Cadre pour visualisation (A supprimer)*/
 }
 
 nav {
@@ -497,7 +490,7 @@ nav {
     margin-top: 2em;
     padding: 0 5em 2em 5em;
     
-    /*border: #3e25ac solid 3px; /*Cadre pour visualisation*/
+    /*border: #3e25ac solid 3px; /*Cadre pour visualisation (A supprimer)*/
 }
 
 nav a:hover {
@@ -516,8 +509,8 @@ nav a:hover {
 }*/
 
 
-/* ///////////////////////////////////////////////////////////////////////////// */
-/*MISE EN FORME GLOBALE DU CONTENU DES VIGNETTES*/
+/* ///////////////////////////////////////////////////////////// */
+/* REGLES POUR LA MISE EN FORME GLOBALE DU CONTENU DES VIGNETTES */
 .thumbnail .fa-star {
     color: #DEEBFF;
     padding-left: 0.2em;
@@ -538,6 +531,6 @@ nav a:hover {
 .thumbnail .star-result:nth-child(2) {
     flex: 1;
     display: flex;
-/*    flex-flow: row nowrap;*/
+    /*flex-flow: row nowrap;*/
     margin: 0.5em 0.5em 0.1em 0.8em;
 }

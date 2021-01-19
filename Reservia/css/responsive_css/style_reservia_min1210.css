@@ -6,11 +6,11 @@
 @media all and (min-width: 1210px) and (max-width: 1439px) {
 
 
-    /* ////////////////////////////////////// */
-    /*MISE EN FORME DES BALISES*/
+    /* ///////////////////// */
+    /* MISE EN FORME DE BASE */
     h2 {
         font-size: 1em;
-    margin-left: 1em;
+        margin-left: 1em;
     }
 
     h3 {
@@ -30,14 +30,18 @@
         padding: 0.5em 3em 0 0;
     }
 
+    .fa, .fas {
+        font-size: x-small;
+    }
 
-    /* ////////////////////////////////////// */
-    /* HEADER */
+
+    /* ////////////////////////////////////////////////////////////////////////// */
+    /* CONTENEUR POUR LE LOGO ET LE MENU DE NAVIGATION (PLACÉS EN ENTETE DU SITE) */
     .header-container {
         height: 6em;
     }
 
-    /* LOGO D'ENTETE */
+    /* REGLES POUR LA MISE EN FORME DU LOGO */
     .header-logo {
         padding-top: 0.5em;
         padding-left: 3.5em;
@@ -47,32 +51,40 @@
         transform: rotate(-2deg) scale(1.1);
     }
 
-
-    /* MENU DE NAVIGATION */
+    /* REGLES POUR LA MISE EN FORME DU MENU DE NAVIGATION */
     .header-nav a {
         width: 6em;
         padding: 1em 1em 0 1em;
     }
 
-    .search-field .fas {
-        width: 3em;
-        height: 3em;
-    }
 
+    /* ///////////////////////////////////////////////////////////////////////// */
+    /* CONTENEUR POUR LE CHAMPS DE RECHERCHE, LE FILTRES ET LE NOMBRE DE RESULTAT*/
+
+    /* MISE EN FORME DES ELEMENTS DU MENU DE RECHERCHE */
     .search-field-form {
         margin-top: 0.5em;
     }
 
-    #search-field-submit {
+    /* BOUTON DE RECHERCHE PAR SELECTION SUR CARTE (GOOGLE MAP, MAPPY,...) */     
+    .search-field-form .fas {
+        width: 3em;
+        height: 3em;
+    }
+
+    /* CHAMPS DE TEXTE POUR LE BOUTON DE RECHERCHE */ 
+    .search-field-form #search-field-submit {
         height: 3em;
         padding-left: 1em;
     }
 
-    .search-button {
+    /* BOUTON POUR LANCER LA RECHERCHE */    
+    .search-field-form .search-button {
         width: 9em;
         height: 3em;
     }
 
+    /* REGLES POUR LA MISE EN FORME DE LA PARTIE: FILTRE DE RECHERCHE */    
     .filter-elements {
         justify-content: flex-start;
         align-items: center;
@@ -93,8 +105,9 @@
         border: #0065Fc solid 0.1em; 
     }
 
-    /* ////////////////////////////////////// */
-    /*SECTION HEBERGEMENT*/
+
+    /* ////////////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA PARTIE: SECTION HEBERGEMENT */
     .hosting-container:nth-child(1) {
         padding: 1em;
         margin: 0 0 0 1em;
@@ -112,7 +125,6 @@
     .hosting-selection-container .thumbnail a {
         width: 14em;
         margin: 0 1em 0 1em;
-        /*align-items: center;*/
         border-bottom: #fff solid 0.2em;
     }
 
@@ -124,12 +136,9 @@
         height: 7em;
     }
 
-    /*.hosting-selection-container * {
-        text-align: center;
-    }*/
 
-    /* ////////////////////////////////////// */
-    /*SECTION ARTICLES POPULAIRES*/
+    /* ////////////////////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA PARTIE: SECTION LES PLUS POPULAIRES */
     .most-popular-container:nth-child(2) {
         padding: 1em;
         margin: 0 0.5em 0 0.5em;
@@ -154,7 +163,7 @@
 
     .most-popular-selection-container .thumbnail img {
         width: 5em;
-        height: 7em; /*auto;*/
+        height: 7em;
     }
     
     .popular-thumbnail * {
@@ -166,8 +175,9 @@
         align-items: flex-end;
     }    
 
-    /* ////////////////////////////////////// */
-    /*SECTION ACTIVITES*/
+
+    /* ////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA SECTION "ACTIVITES" */
     .activity-container {
         margin: 1em 0.5em;   
     }
@@ -202,8 +212,8 @@
     }
 
 
-    /* ////////////////////////////////////// */
-    /*SECTION FOOTER*/
+    /* /////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA SECTION "FOOTER" */
     nav {
         margin-top: 0;
         padding: 0 2em 1em 4em;
@@ -214,8 +224,8 @@
     }
 
 
-    /* ////////////////////////////////////// */
-    /*MISE EN FORME GLOBALE DU CONTENU DES VIGNETTES*/
+    /* ///////////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME GLOBALE DU CONTENU DES VIGNETTES */
     .thumbnail {
         margin: 1em 0.5em;
     }
@@ -231,9 +241,4 @@
     .thumbnail .star-result:nth-child(2) {
         margin: 0.1em 0.2em 0.1em 1em;
     }
-
-    .fa, .fas {
-        font-size: x-small;
-    }
-
 }

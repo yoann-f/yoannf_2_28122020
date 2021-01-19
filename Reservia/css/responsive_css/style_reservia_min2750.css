@@ -1,26 +1,77 @@
-/* ////////////////////////////////////// */
-/* RESPONSIVE CSS Min:2160 --> Max:3840px */
-/* ////////////////////////////////////// */
+/* /////////////////////// */
+/* RESPONSIVE CSS Min:2160 */
+/* /////////////////////// */
 
 
 @media all and (min-width: 2750px) {
 
 
-    /* ELEMENTS DE LA SECTION "LES PLUS POPULAIRE" */
+    /* ////////////////////////////////////////////////////////////////////////// */
+    /* CONTENEUR POUR LE LOGO ET LE MENU DE NAVIGATION (PLACÉS EN ENTETE DU SITE) */
+
+    /* REGLES POUR LA MISE EN FORME DU LOGO */
+    .header-logo {
+        padding-top: 1em;
+        padding-left: 10%;
+    }
+
+    .svg-logo {
+        width: 18em;
+    }    
+
+    /* REGLES POUR LA MISE EN FORME DU MENU DE NAVIGATION */    
+    .header-nav {
+        padding-right: 10%;
+    }
+
+    .header-nav a {
+        width: 12em;
+    }
+
+
+    /* ///////////////////////////////////////////////////////////////////////// */
+    /* CONTENEUR POUR LE CHAMPS DE RECHERCHE, LE FILTRES ET LE NOMBRE DE RESULTAT*/
+    .search-container {
+        margin: 0 10% 0 10%;
+    } 
+
+
+    /* ////////////////// */
+    /* CONTENEUR PRINCIPAL*/
+    main {
+        justify-content: center;
+        margin: 0 10% 0 10%;
+    }
+
+
+    /* ////////////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA PARTIE: SECTION HEBERGEMENT */ 
+    .hosting-container:nth-child(1) {
+        flex: 4;
+    }
+    
+
+    /* ////////////////////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA PARTIE: SECTION LES PLUS POPULAIRES */ 
     .most-popular-selection-container .thumbnail {
         transition: transform 350ms ease-out;       
     }
 
-.most-popular-selection-container .thumbnail:hover {
+    .most-popular-selection-container .thumbnail:hover {
         transition: transform 250ms ease-in;
         transform: rotate(1.5deg) scale(1.05);        
     }
 
 
-    /* ELEMENT DE LA SECTION "ACTIVITES" */
+    /* ////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA SECTION "ACTIVITES" */
     .activity-article-content-1 a {
         width: 36em;
         margin: 1.3em;
+    }
+
+    .activity-selection-container {
+        justify-content: center;
     }
 
     .activity-article-content-1 img {

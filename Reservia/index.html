@@ -5,8 +5,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/style_reservia.css" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" href="css/responsive_css/style_reservia_min320.css" />
+        <link rel="stylesheet" href="css/responsive_css/style_reservia_max544.css" />
         <link rel="stylesheet" href="css/responsive_css/style_reservia_min545.css" />
         <link rel="stylesheet" href="css/responsive_css/style_reservia_min768.css" />
         <link rel="stylesheet" href="css/responsive_css/style_reservia_min1024.css" />
@@ -15,7 +14,7 @@
         <link rel="stylesheet" href="css/responsive_css/style_reservia_min2160.css" />
         <link rel="stylesheet" href="css/responsive_css/style_reservia_min2750.css" />
         <link rel="stylesheet" href="fontawesome-5.15.1/css/all.css" />
-
+        <meta name="viewport" content="width=device-width" />
         <title>Réservia</title>
     </head>
 
@@ -25,7 +24,7 @@
             <!--Conteneur pour l'entête du site-->
             <section class="header-container">
 
-                <!--Logo d'entête + lien vers la page d'accueil du site-->
+                <!--Logo d'entête avec lien vers la page d'accueil du site-->
                 <div class="header-logo">
                     <a class="logo" href="#" title="Réservia.fr">
                         <img class="svg-logo" src="images/logo/Reservia.svg" alt="Logo Réservia" />
@@ -47,7 +46,7 @@
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
 
-                <!--Formulaire de recherche-->
+                <!--Formulaire de recherche (version desktop)-->
                 <div class="search-field">                    
                     <form method="POST" action="#" class="search-field-form">
                         <span class="fas fa-map-marker-alt"></span>
@@ -55,6 +54,7 @@
                         <input for="search-field-submit" class="search-button" type="submit" value="Rechercher" />
                     </form>                                           
                 </div>
+                <!--Formulaire de recherche (version mobile)-->
                 <div class="search-field-for-mobile">
                     <form method="POST" action="#" class="search-field-form">
                         <span class="fas fa-map-marker-alt"></span>
@@ -94,13 +94,15 @@
             </section>
         </header>
 
+        <!--Conteneur principal-->
         <main role="main">
 
-            <!--Conteneur d'affichage des hébergements trouvés en fonction de la recherche effectuée-->
+            <!--Conteneur de la section "hébergements"-->
             <section class="hosting-container" id="hosting-container">
                 <div class="hosting-title">
                     <h2>Hébergements à Marseille</h2>
                 </div>
+                <!--Conteneur présentant la sélection des hébergements trouvés en fonction de la recherche effectuée-->
                 <article class="hosting-selection-container">
 
                         <!--Vignettes Hébergements-->
@@ -207,21 +209,23 @@
                         </div>
                 </article>    
 
-                    <div class="hosting-more">
-                        <a href="#">
-                            <p>Afficher plus</p>
-                        </a>
-                    </div>
+                <!--Bouton permettant l'affichage de plus de contenu pour la section "Hébergements"-->
+                <div class="hosting-more">
+                    <a href="#">
+                        <p>Afficher plus</p>
+                    </a>
+                </div>
 
             </section>
 
-            <!--Conteneur d'affichage des hébergements les plus populaires selon la recherche effectuée-->
+            <!--Conteneur de la section des hébergements les plus populaires-->
             <section class="most-popular-container" id="most-popular-container">
                 <div class="most-popular-title">
                     <h2>Les plus populaires</h2>
                     <span class="fas fa-chart-line"></span>
                 </div>    
-                    
+
+                <!--Conteneur présentant la sélection des hébergements les plus populaires trouvés en fonction de la recherche effectuée-->
                 <article class="most-popular-selection-container">
 
                     <!--Vignettes Les plus populaires-->
@@ -285,11 +289,13 @@
                 </article>
             </section>
 
-            <!--Conteneur d'affichage des activités recommandées selon la recherche effectuée-->
+            <!--Conteneur de la section des activités recommandées-->
             <section class="activity-container" id="activity-container">
                 <div class="activity-title">
                     <h2>Activités à Marseille</h2>
                 </div>
+
+                <!--Conteneur présentant la sélection des activités proposées en fonction de la recherche effectuée-->
                 <article class="activity-selection-container">
 
                     <!--Vignettes Activités-->

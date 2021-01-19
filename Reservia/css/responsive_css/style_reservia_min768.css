@@ -5,25 +5,40 @@
 @media all and (min-width:768px) and (max-width: 1023px) {
 
 
-    /* ///////////////////////////////////// */
-    /*MISE EN FORME DES BALISES*/
+    /* ///////////////////// */
+    /* MISE EN FORME DE BASE */
     h2 {
         font-size: 1.25em;
     }
 
-    /* ///////////////////////////////////// */
-    /*HEADER /MENU DE NAVIGATION*/
+    ul {
+        display: block;
+        list-style-type: none;
+        padding: 0.2em 1em 0.2em 0em;
+    }    
+
+
+    /* ////////////////////////////////////////////////////////////////////////// */
+    /* CONTENEUR POUR LE LOGO ET LE MENU DE NAVIGATION (PLACÉS EN ENTETE DU SITE) */
     .header-container {
-        display: flex;
         flex-direction: column;
         position: relative;
     }
-    
+
+    /* REGLES POUR LA MISE EN FORME DU LOGO */    
+    .header-logo {
+        transition: none;                
+    }    
+
+    .header-logo:hover {
+        transform: none;
+        transition: none;   
+    }
+
+    /* REGLES POUR LA MISE EN FORME DU MENU DE NAVIGATION */    
     .header-nav {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-evenly; /*center;*/
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
         width: 100%;
         padding-right: 0;
     }
@@ -40,17 +55,11 @@
         border-bottom: 0.1em solid #0065FC;
     }     
 
-    .header-nav .hosting-button {
+    .header-nav .hosting-button, .activity-button {
         font-size: 1.5em;
         font-weight: bold;
         text-align: center;
-    }
-
-    .header-nav .activity-button {
-        font-size: 1.5em;
-        font-weight: bold;
-        text-align: center;
-    }    
+    }  
 
     .header-nav .register-button {
         font-size: 1.5em;
@@ -58,48 +67,39 @@
         border-bottom: none;
     }
 
-    .header-logo {
-        transform: none;                
-    }    
 
-    .header-logo:hover {
-        transform: none;   
-    }
-
-    /* ///////////////////////////////////// */
-    /*CHAMPS ET FILTRES DE RECHERCHE*/
-    .search-header {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        text-align: center;
-    }    
-
+    /* ///////////////////////////////////////////////////////////////////////// */
+    /* CONTENEUR POUR LE CHAMPS DE RECHERCHE, LE FILTRES ET LE NOMBRE DE RESULTAT*/
+    
+    /* MODE D'AFFICHAGE "DESKTOP" OU "MOBILE" POUR LE CHAMPS DE RECHERCHE */
     .search-field {
         width: 100%;
-        display: flex;
         justify-content: center;
         margin-top: 1em;    
     }
 
-    .search-field .fas {
+    /* BOUTON DE RECHERCHE PAR SELECTION SUR CARTE (GOOGLE MAP, MAPPY,...) */    
+    .search-field-form .fas {
         width: 3em;
         height: 3em;
     }
 
-    #search-field-submit {
+    /* CHAMPS DE TEXTE POUR LE BOUTON DE RECHERCHE */    
+    .search-field-form #search-field-submit {
         width: 25em;
         height: 3em;
     }
-        
-    .search-button {
-        width: 13em;
-        height: 3em;
+    
+    /* BOUTON POUR LANCER LA RECHERCHE */    
+    .search-field-form .search-button {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 13em;
+        height: 3em;        
     }
 
+    /* REGLES POUR LA MISE EN FORME DE LA PARTIE: FILTRE DE RECHERCHE */
     .filter-elements a {
         margin: 1em 0 0 0.5em;
         flex-flow: row nowrap;
@@ -121,19 +121,17 @@
         justify-content: center;
     }
 
-    /* ///////////////////////////////////// */
-    /*CONTENEUR PRINCIPAL*/
+    /* ////////////////// */
+    /* CONTENEUR PRINCIPAL*/
     main {
         justify-content: center;
     }
 
-    /* ///////////////////////////////////// */
-    /*HEBERGEMENT*/
+    /* ////////////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA PARTIE: SECTION HEBERGEMENT */
     .hosting-container:nth-child(1) {
         flex: none;
         order: 2;
-        display: flex;
-        flex-flow: column nowrap;
         align-items: center;
         width: 90%;
         height: auto;
@@ -152,12 +150,12 @@
     }
 
     .hosting-selection-container .thumbnail a:hover {
-    transition: none;
-    transform: none;        
+        transition: none;
+        transform: none;        
     }
 
-    /* ///////////////////////////////////// */
-    /*LES PLUS POPULAIRES*/
+    /* ////////////////////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA PARTIE: SECTION LES PLUS POPULAIRES */
     .most-popular-container:nth-child(2) {
         flex: none;
         order: 1;
@@ -171,6 +169,7 @@
         align-items: center;
     }
 
+    /* REGLES POUR LA MISE EN FORME DES VIGNETTES DE LA SECTION "LES PLUS POPULAIRES" */    
     .most-popular-selection-container .thumbnail {
         width: 90%;
     }
@@ -193,8 +192,8 @@
         object-fit: cover;
     }
 
-    /* ///////////////////////////////////// */
-    /*ACTIVITÉS*/
+    /* ////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA SECTION "ACTIVITES" */
     .activity-container {
         order: 3;
         width: 90%;
@@ -212,8 +211,7 @@
         justify-content: center;
     }
 
-    /* ///////////////////////////////////// */
-    /*VIGNETTES CONTENEUR #1*/
+    /* REGLES POUR LA MISE EN FORME DES VIGNETTES (CONTENEUR 1) DE LA SECTION "ACTIVITES" */
     .activity-article-content-1 {
         display: flex;
         height: 18em;
@@ -225,25 +223,17 @@
     }    
 
     .activity-article-content-1 a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
+        justify-content: center;        
         width: 100%;
         height: 100%;
-        /*margin: 1.3em;
-        border-radius: 2em;*/
     }
 
     .activity-article-content-1 a:hover {
-        border-bottom: #0065FC solid 0.5em;
         transition: none; 
         transform: none;       
     }
 
-    /* ///////////////////////////////////// */
-    /*VIGNETTES CONTENEUR #2*/
+    /* REGLES POUR LA MISE EN FORME DES VIGNETTES (CONTENEUR 2) DE LA SECTION "ACTIVITES" */
     .activity-article-content-2 {
         display: flex;
         flex-wrap: wrap;
@@ -257,46 +247,33 @@
     }
 
     .activity-article-content-2-1 a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 100%;
         height: 19em;
+    }
+    
+    .activity-article-content-2-1 a:hover {   
+        transition: none; 
+        transform: none; 
     }
 
     .activity-article-content-2-1 img {
         width: 100%;
     }    
 
-    .activity-article-content-2-1 a:hover {
-        border-bottom: #0065FC solid 0.5em;    
-        transition: none; 
-        transform: none; 
-    }
 
-
-    /* ///////////////////////////////////// */
-    /*SECTION FOOTER*/
+    /* /////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME DE LA SECTION "FOOTER" */
     nav {
-        display: flex;
-        flex-flow: row nowrap;
         margin-top: 1em;
         padding: 0 2em 1em 2em;
     }
 
 
-    /* ///////////////////////////////////// */
-    /*MISE EN FORME GLOBALE DU CONTENU DES VIGNETTES*/
-    ul {
-        display: block;
-        list-style-type: none;
-        padding: 0.2em 1em 0.2em 0em;
-    }
-
+    /* //////////////////////////////////////////////////////////// */
+    /* REGLES POUR LA MISE EN FORME GLOBALE DU CONTENU DES VIGNETTES*/
     .thumbnail {
         display: flex;
         flex-direction: column;
         align-items: center;
     }    
-
 }
