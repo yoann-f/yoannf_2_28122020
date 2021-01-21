@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 
     <head>
         <meta charset="utf-8" />
@@ -22,7 +22,7 @@
 
         <header>
             <!--Conteneur pour l'entête du site-->
-            <section class="header-container">
+            <div class="header-container">
 
                 <!--Logo d'entête avec lien vers la page d'accueil du site-->
                 <div class="header-logo">
@@ -38,7 +38,7 @@
                     <a class="register-button" href="#">S'inscrire</a>
                 </div>
 
-            </section>
+            </div>
 
             <!--Conteneur pour le bloc de recherche (Champs de recherche et filtres)-->
             <section class="search-container">
@@ -51,14 +51,14 @@
                     <form method="POST" action="#" class="search-field-form">
                         <span class="fas fa-map-marker-alt"></span>
                         <input type="search" name="search-field-submit" id="search-field-submit" required="" placeholder="Ville, Pays" value="Marseille, France"/>
-                        <input for="search-field-submit" class="search-button" type="submit" value="Rechercher" />
+                        <input class="search-button" type="submit" value="Rechercher" />
                     </form>                                           
                 </div>
                 <!--Formulaire de recherche (version mobile)-->
                 <div class="search-field-for-mobile">
                     <form method="POST" action="#" class="search-field-form">
                         <span class="fas fa-map-marker-alt"></span>
-                        <input type="search" name="search-field-submit" id="search-field-submit" required="" placeholder="Ville, Pays" value="Marseille, France" />
+                        <input type="search" name="search-field-submit" id="search-field-submit_mobile" required="" placeholder="Ville, Pays" value="Marseille, France" />
                         <div class="search-button-for-mobile">
                             <span class="fas fa-search"></span>
                         </div>
@@ -95,7 +95,7 @@
         </header>
 
         <!--Conteneur principal-->
-        <main role="main">
+        <main>
 
             <!--Conteneur de la section "hébergements"-->
             <section class="hosting-container" id="hosting-container">
