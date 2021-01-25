@@ -79,7 +79,13 @@ ul {
     /*background-color: pink; /*Couleur de fond pour visualisation des bouton du menu (A supprimer)*/
 }
 
-.header-nav a:hover {
+.header-nav .hosting-button:hover {
+    font-weight: bold;
+    color: #0065fc;
+    border-top: 0.3em solid #0065fc;
+}
+
+.header-nav .activity-button:hover {
     font-weight: bold;
     color: #0065fc;
     border-top: 0.3em solid #0065fc;
@@ -89,6 +95,7 @@ ul {
     font-weight: bold;
     color: #0065fc;
 }
+
 
 /* ///////////////////////////////////////////////////////////////////////// */
 /* CONTENEUR POUR LE CHAMPS DE RECHERCHE, LE FILTRES ET LE NOMBRE DE RESULTAT*/

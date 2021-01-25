@@ -2,7 +2,7 @@
 /* RESPONSIVE CSS Min:545px --> Max:767px */
 /* ////////////////////////////////////// */
 
-@media screen and (min-width:545px) and (max-width: 767px) {
+@media screen and (min-width:545px) and (max-width: 1023px) {
 
 
     /* ///////////////////// */
@@ -54,20 +54,27 @@
     }
 
     .header-nav a {
+        width: 50%;
         padding: 1em 1em 1em 1em;
         border-top: none;
-        border-bottom: 0.1em solid #FFF;
+        border-bottom: 0.1em solid #F2F2F2;
     }
 
-    .header-nav a:hover {
+    .header-nav .hosting-button:hover {
         padding: 1em 1em 1em 1em;
         border-top: none;
-        border-bottom: 0.1em solid #0065FC;
+        border-bottom: 0.2em solid #0065FC;
     }     
+
+    .header-nav .activity-button:hover {
+        padding: 1em 1em 1em 1em;
+        border-top: none;
+        border-bottom: 0.2em solid #0065FC;
+    }   
 
     .header-nav .hosting-button, .activity-button {
         font-size: 1.4em;
-        font-weight: bold;
+        /*font-weight: bold;*/
     }
 
     .header-nav .register-button {
@@ -162,10 +169,10 @@
     .hosting-container:nth-child(1) {
         flex: none;
         align-items: center;
-        width: 100%;
+        width: 90%;
         height: auto;
-        padding: 1em;
-        margin: 0.5em 1em 0.5em 1em;
+        padding: 0em;
+        margin: 0.5em 0 0.5em 0;
     }
 
     .hosting-title {
@@ -175,11 +182,11 @@
 
     .hosting-selection-container {
         flex-direction: column;
-        width: inherit;
+        width: 90%;
     }
 
     .hosting-selection-container .thumbnail a {
-        width: 90%;
+        width: 100%;
         height: 18em;
     }
 
@@ -193,7 +200,7 @@
     .most-popular-container:nth-child(2) {
         flex: none;
         order: 1;
-        width: 100%;
+        width: 90%;
         height: auto;
         padding: 1em;
         margin: 0.5em 1em 0.5em 1em;
