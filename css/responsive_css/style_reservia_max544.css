@@ -124,17 +124,19 @@
     /* MISE EN FORME DES ELEMENTS DU MENU DE RECHERCHE */
     .search-field-form {
         justify-content: center;
+        width: 100%; /*Add #10*/
     }        
 
     /* BOUTON DE RECHERCHE PAR SELECTION SUR CARTE (GOOGLE MAP, MAPPY,...) */
     .search-field-form .fas {
         width: 3em;
-        height: 3em;    
+        height: 3em;
+        border-radius: 0.5em 0 0 0.5em; /*Add #10*/    
     }
 
     /* CHAMPS DE TEXTE POUR LE BOUTON DE RECHERCHE */
     .search-field-form #search-field-submit_mobile {
-        width: 17em;
+        width: 100%; /*Add #10 17em;*/
         height: 3.5em;
         border: none;
         padding-left: 0.5em;
