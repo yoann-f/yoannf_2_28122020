@@ -168,10 +168,11 @@
     /* REGLES POUR LA MISE EN FORME DE LA PARTIE: SECTION HEBERGEMENT */
     .hosting-container:nth-child(1) {
         flex: none;
+        order: 2;
         align-items: center;
-        width: 90%;
+        width: 95%;
         height: auto;
-        padding: 0em;
+        padding: 0;
         margin: 0.5em 0 0.5em 0;
     }
 
@@ -200,10 +201,11 @@
     .most-popular-container:nth-child(2) {
         flex: none;
         order: 1;
-        width: 90%;
+        order: 1;
+        width: 95%;
         height: auto;
-        padding: 1em;
-        margin: 0.5em 1em 0.5em 1em;
+        padding: 0;
+        margin: 0.5em 0 0.5em 0;
     }
 
     .most-popular-title .fas {

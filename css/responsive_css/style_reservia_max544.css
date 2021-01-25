@@ -40,7 +40,7 @@
 
     /* REGLES POUR LA MISE EN FORME DU LOGO */
     .header-logo {
-        padding-top: 0.2em;
+        padding-top: 0.5em;
         padding-left: 1em;
         transition: none;
         position: absolute;             
@@ -88,6 +88,7 @@
 
     .header-nav .register-button {
         position: absolute;
+        width: max-content;
         top: 0;
         right: 0;
         display: flex;
@@ -205,11 +206,13 @@
         flex: none;
         order: 2;
         align-items: center;
-        width: 90%;
+        width: 100%;
         height: auto;
         padding: 0;
         margin: 0.5em 0 0.5em 0;
         border-radius: 0;
+        background-color: #FFF;
+        box-shadow: none;
     }
 
     .hosting-title {
@@ -247,7 +250,7 @@
     .most-popular-container:nth-child(2) {
         flex: none;
         order: 1;
-        width: 90%;
+        width: 100%;
         height: auto;
         padding: 0;
         margin: 0.5em 0 0.5em 0;
